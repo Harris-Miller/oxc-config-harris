@@ -2,54 +2,19 @@
   "$schema": "../node_modules/oxlint/configuration_schema.json",
   "plugins": ["promise"],
   "rules": {
-    "always-return": [
-      "off",
-      {
-        "ignoreAssignmentVariable": ["globalThis"],
-        "ignoreLastCallback": false,
-      },
-    ],
+    "always-return": "off",
     "avoid-new": "off",
-    "catch-or-return": [
-      "off",
-      {
-        "allowFinally": false,
-        "allowThen": false,
-        "terminationMethod": ["catch"],
-      },
-    ],
-    "no-callback-in-promise": [
-      "off",
-      {
-        "callbacks": ["callback", "cb", "done", "next"],
-        "exceptions": [],
-        "timeoutsErr": false,
-      },
-    ],
+    "catch-or-return": "off",
+    "no-callback-in-promise": "off",
     "no-multiple-resolved": "off",
     "no-nesting": "off",
     "no-new-statics": "off",
-    "no-promise-in-callback": [
-      "off",
-      {
-        "exemptDeclarations": false,
-      },
-    ],
+    "no-promise-in-callback": "off",
     "no-return-in-finally": "off",
-    "no-return-wrap": [
-      "off",
-      {
-        "allowReject": false,
-      },
-    ],
+    "no-return-wrap": "off",
     "param-names": "off",
     "prefer-await-to-callbacks": "off",
-    "prefer-await-to-then": [
-      "off",
-      {
-        "strict": false,
-      },
-    ],
+    "prefer-await-to-then": "off",
     "prefer-catch": "off",
     "spec-only": "off",
     "valid-params": "off",

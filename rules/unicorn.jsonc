@@ -2,46 +2,19 @@
   "$schema": "../node_modules/oxlint/configuration_schema.json",
   "plugins": ["unicorn"],
   "rules": {
-    "catch-error-name": [
-      "off",
-      {
-        "name": "error",
-      },
-    ],
+    "catch-error-name": "off",
     "consistent-assert": "off",
     "consistent-date-clone": "off",
     "consistent-empty-array-spread": "off",
     "consistent-existence-index-check": "off",
-    "consistent-function-scoping": [
-      "off",
-      {
-        "checkArrowFunctions": true,
-      },
-    ],
+    "consistent-function-scoping": "off",
     "consistent-template-literal-escape": "off",
     "custom-error-definition": "off",
     "empty-brace-spaces": "off",
     "error-message": "off",
     "escape-case": "off",
-    "explicit-length-check": [
-      "off",
-      {
-        "non-zero": "greater-than",
-      },
-    ],
-    "filename-case": [
-      "off",
-      {
-        "case": "kebabCase",
-        "cases": {
-          "kebabCase": true,
-          "camelCase": false,
-          "snakeCase": false,
-          "pascalCase": false,
-        },
-        "multipleFileExtensions": true,
-      },
-    ],
+    "explicit-length-check": "off",
+    "filename-case": "off",
     "new-for-builtins": "off",
     "no-abusive-eslint-disable": "off",
     "no-accessor-recursion": "off",
@@ -49,24 +22,9 @@
     "no-array-callback-reference": "off",
     "no-array-for-each": "off",
     "no-array-method-this-argument": "off",
-    "no-array-reduce": [
-      "off",
-      {
-        "allowSimpleOperations": true,
-      },
-    ],
-    "no-array-reverse": [
-      "off",
-      {
-        "allowExpressionStatement": true,
-      },
-    ],
-    "no-array-sort": [
-      "off",
-      {
-        "allowExpressionStatement": true,
-      },
-    ],
+    "no-array-reduce": "off",
+    "no-array-reverse": "off",
+    "no-array-sort": "off",
     "no-await-expression-member": "off",
     "no-await-in-promise-methods": "error",
     "no-console-spaces": "off",
@@ -75,15 +33,7 @@
     "no-hex-escape": "off",
     "no-immediate-mutation": "off",
     "no-instanceof-array": "off",
-    "no-instanceof-builtins": [
-      "off",
-      {
-        "exclude": [],
-        "include": [],
-        "strategy": "loose",
-        "useErrorIsError": false,
-      },
-    ],
+    "no-instanceof-builtins": "off",
     "no-invalid-fetch-options": "error",
     "no-invalid-remove-event-listener": "error",
     "no-length-as-slice-end": "off",
@@ -94,24 +44,14 @@
     "no-nested-ternary": "off",
     "no-new-array": "error",
     "no-new-buffer": "off",
-    "no-null": [
-      "off",
-      {
-        "checkStrictEquality": false,
-      },
-    ],
+    "no-null": "off",
     "no-object-as-default-parameter": "off",
     "no-process-exit": "off",
     "no-single-promise-in-promise-methods": "error",
     "no-static-only-class": "off",
     "no-thenable": "error",
     "no-this-assignment": "off",
-    "no-typeof-undefined": [
-      "off",
-      {
-        "checkGlobalVariables": false,
-      },
-    ],
+    "no-typeof-undefined": "off",
     "no-unnecessary-array-flat-depth": "off",
     "no-unnecessary-array-splice-count": "off",
     "no-unnecessary-await": "error",
@@ -123,42 +63,20 @@
     "no-useless-fallback-in-spread": "error",
     "no-useless-iterator-to-array": "off",
     "no-useless-length-check": "error",
-    "no-useless-promise-resolve-reject": [
-      "off",
-      {
-        "allowReject": false,
-      },
-    ],
+    "no-useless-promise-resolve-reject": "off",
     "no-useless-spread": "error",
     "no-useless-switch-case": "off",
-    "no-useless-undefined": [
-      "off",
-      {
-        "checkArguments": true,
-        "checkArrowFunctionBody": true,
-      },
-    ],
+    "no-useless-undefined": "off",
     "no-zero-fractions": "off",
     "number-literal-case": "off",
-    "numeric-separators-style": [
-      "off",
-      {
-        "onlyIfContainsSeparator": false,
-      },
-    ],
+    "numeric-separators-style": "off",
     "prefer-add-event-listener": "off",
     "prefer-array-find": "off",
     "prefer-array-flat": "off",
     "prefer-array-flat-map": "off",
     "prefer-array-index-of": "off",
     "prefer-array-some": "off",
-    "prefer-at": [
-      "off",
-      {
-        "checkAllIndexAccess": false,
-        "getLastElementFunctions": [],
-      },
-    ],
+    "prefer-at": "off",
     "prefer-bigint-literals": "off",
     "prefer-blob-reading-methods": "off",
     "prefer-class-fields": "off",
@@ -184,19 +102,8 @@
     "prefer-native-coercion-functions": "off",
     "prefer-negative-index": "off",
     "prefer-node-protocol": "off",
-    "prefer-number-properties": [
-      "off",
-      {
-        "checkInfinity": false,
-        "checkNaN": true,
-      },
-    ],
-    "prefer-object-from-entries": [
-      "off",
-      {
-        "functions": ["_.fromPairs", "lodash.fromPairs"],
-      },
-    ],
+    "prefer-number-properties": "off",
+    "prefer-object-from-entries": "off",
     "prefer-optional-catch-binding": "off",
     "prefer-prototype-methods": "off",
     "prefer-query-selector": "off",
@@ -211,29 +118,19 @@
     "prefer-string-slice": "off",
     "prefer-string-starts-ends-with": "error",
     "prefer-string-trim-start-end": "off",
-    "prefer-structured-clone": [
-      "off",
-      {
-        "functions": ["cloneDeep", "utils.clone"],
-      },
-    ],
-    "prefer-ternary": ["off", "always"],
+    "prefer-structured-clone": "off",
+    "prefer-ternary": "off",
     "prefer-top-level-await": "off",
     "prefer-type-error": "off",
-    "relative-url-style": ["off", "never"],
+    "relative-url-style": "off",
     "require-array-join-separator": "off",
     "require-module-attributes": "off",
     "require-module-specifiers": "off",
     "require-number-to-fixed-digits-argument": "off",
     "require-post-message-target-origin": "off",
-    "switch-case-braces": ["off", "always"],
+    "switch-case-braces": "off",
     "switch-case-break-position": "off",
-    "text-encoding-identifier-case": [
-      "off",
-      {
-        "withDash": false,
-      },
-    ],
+    "text-encoding-identifier-case": "off",
     "throw-new-error": "off",
   },
 }

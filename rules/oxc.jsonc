@@ -18,39 +18,12 @@
     "missing-throw": "error",
     "no-accumulating-spread": "off",
     "no-async-await": "off",
-    "no-async-endpoint-handlers": [
-      "off",
-      {
-        "allowedNames": [],
-      },
-    ],
-    "no-barrel-file": [
-      "off",
-      {
-        "threshold": 100,
-      },
-    ],
+    "no-async-endpoint-handlers": "off",
+    "no-barrel-file": "off",
     "no-const-enum": "off",
-    "no-map-spread": [
-      "off",
-      {
-        "ignoreArgs": true,
-        "ignoreRereads": true,
-      },
-    ],
-    "no-optional-chaining": [
-      "off",
-      {
-        "message": "",
-      },
-    ],
-    "no-rest-spread-properties": [
-      "off",
-      {
-        "objectRestMessage": "",
-        "objectSpreadMessage": "",
-      },
-    ],
+    "no-map-spread": "off",
+    "no-optional-chaining": "off",
+    "no-rest-spread-properties": "off",
     "no-this-in-exported-function": "off",
     "number-arg-out-of-range": "error",
     "only-used-in-recursion": "error",

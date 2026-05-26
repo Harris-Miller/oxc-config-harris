@@ -2,237 +2,66 @@
   "$schema": "../node_modules/oxlint/configuration_schema.json",
   "plugins": ["react"],
   "rules": {
-    "button-has-type": [
-      "off",
-      {
-        "button": true,
-        "reset": true,
-        "submit": true,
-      },
-    ],
-    "checked-requires-onchange-or-readonly": [
-      "off",
-      {
-        "ignoreExclusiveCheckedAttribute": false,
-        "ignoreMissingProperties": false,
-      },
-    ],
-    "display-name": [
-      "off",
-      {
-        "checkContextObjects": false,
-        "ignoreTranspilerName": false,
-      },
-    ],
+    "button-has-type": "off",
+    "checked-requires-onchange-or-readonly": "off",
+    "display-name": "off",
     "exhaustive-deps": "off",
-    "forbid-component-props": [
-      "off",
-      {
-        "forbid": ["className", "style"],
-      },
-    ],
-    "forbid-dom-props": [
-      "off",
-      {
-        "forbid": [],
-      },
-    ],
-    "forbid-elements": [
-      "off",
-      {
-        "forbid": [],
-      },
-    ],
+    "forbid-component-props": "off",
+    "forbid-dom-props": "off",
+    "forbid-elements": "off",
     "forward-ref-uses-ref": "off",
-    "hook-use-state": [
-      "off",
-      {
-        "allowDestructuredState": false,
-      },
-    ],
+    "hook-use-state": "off",
     "iframe-missing-sandbox": "off",
-    "jsx-boolean-value": [
-      "off",
-      "never",
-      {
-        "always": [],
-        "assumeUndefinedIsFalse": false,
-        "never": [],
-      },
-    ],
-    "jsx-curly-brace-presence": [
-      "off",
-      {
-        "children": "never",
-        "propElementValues": "ignore",
-        "props": "never",
-      },
-    ],
-    "jsx-filename-extension": [
-      "off",
-      {
-        "allow": "always",
-        "extensions": ["jsx"],
-        "ignoreFilesWithoutCode": false,
-      },
-    ],
-    "jsx-fragments": ["off", "syntax"],
-    "jsx-handler-names": [
-      "off",
-      {
-        "checkInlineFunctions": false,
-        "checkLocalVariables": false,
-        "eventHandlerPrefixes": "handle",
-        "eventHandlerPropPrefixes": "on",
-        "ignoreComponentNames": [],
-      },
-    ],
-    "jsx-key": [
-      "off",
-      {
-        "checkFragmentShorthand": true,
-        "checkKeyMustBeforeSpread": true,
-        "warnOnDuplicates": true,
-      },
-    ],
-    "jsx-max-depth": [
-      "off",
-      {
-        "max": 2,
-      },
-    ],
+    "jsx-boolean-value": "off",
+    "jsx-curly-brace-presence": "off",
+    "jsx-filename-extension": "off",
+    "jsx-fragments": "off",
+    "jsx-handler-names": "off",
+    "jsx-key": "off",
+    "jsx-max-depth": "off",
     "jsx-no-comment-textnodes": "off",
     "jsx-no-constructed-context-values": "off",
     "jsx-no-duplicate-props": "off",
-    "jsx-no-script-url": [
-      "off",
-      {
-        "components": {},
-        "includeFromSettings": false,
-      },
-    ],
-    "jsx-no-target-blank": [
-      "off",
-      {
-        "allowReferrer": false,
-        "enforceDynamicLinks": "always",
-        "forms": false,
-        "links": true,
-        "warnOnSpreadAttributes": false,
-      },
-    ],
+    "jsx-no-script-url": "off",
+    "jsx-no-target-blank": "off",
     "jsx-no-undef": "off",
-    "jsx-no-useless-fragment": [
-      "off",
-      {
-        "allowExpressions": false,
-      },
-    ],
-    "jsx-pascal-case": [
-      "off",
-      {
-        "allowAllCaps": false,
-        "allowLeadingUnderscore": false,
-        "allowNamespace": false,
-        "ignore": [],
-      },
-    ],
+    "jsx-no-useless-fragment": "off",
+    "jsx-pascal-case": "off",
     "jsx-props-no-spread-multi": "off",
-    "jsx-props-no-spreading": [
-      "off",
-      {
-        "custom": "enforce",
-        "exceptions": [],
-        "explicitSpread": "enforce",
-        "html": "enforce",
-      },
-    ],
+    "jsx-props-no-spreading": "off",
     "no-array-index-key": "off",
     "no-children-prop": "off",
     "no-clone-element": "off",
     "no-danger": "off",
     "no-danger-with-children": "off",
-    "no-did-mount-set-state": ["off", "allowed"],
-    "no-did-update-set-state": ["off", "allowed"],
+    "no-did-mount-set-state": "off",
+    "no-did-update-set-state": "off",
     "no-direct-mutation-state": "off",
     "no-find-dom-node": "off",
     "no-is-mounted": "off",
-    "no-multi-comp": [
-      "off",
-      {
-        "ignoreStateless": false,
-      },
-    ],
+    "no-multi-comp": "off",
     "no-namespace": "off",
     "no-object-type-as-default-prop": "off",
     "no-react-children": "off",
     "no-redundant-should-component-update": "off",
     "no-render-return-value": "off",
     "no-set-state": "off",
-    "no-string-refs": [
-      "off",
-      {
-        "noTemplateLiterals": false,
-      },
-    ],
+    "no-string-refs": "off",
     "no-this-in-sfc": "off",
     "no-unescaped-entities": "off",
-    "no-unknown-property": [
-      "off",
-      {
-        "ignore": [],
-        "requireDataLowercase": false,
-      },
-    ],
-    "no-unsafe": [
-      "off",
-      {
-        "checkAliases": false,
-      },
-    ],
-    "no-unstable-nested-components": [
-      "off",
-      {
-        "allowAsProps": false,
-        "customValidators": [],
-        "propNamePattern": "render*",
-      },
-    ],
-    "no-will-update-set-state": ["off", "allowed"],
-    "only-export-components": [
-      "off",
-      {
-        "allowConstantExport": false,
-        "allowExportNames": [],
-        "checkJS": false,
-        "customHOCs": [],
-      },
-    ],
-    "prefer-es6-class": ["off", "always"],
-    "prefer-function-component": [
-      "off",
-      {
-        "allowErrorBoundary": true,
-        "allowJsxUtilityClass": false,
-      },
-    ],
+    "no-unknown-property": "off",
+    "no-unsafe": "off",
+    "no-unstable-nested-components": "off",
+    "no-will-update-set-state": "off",
+    "only-export-components": "off",
+    "prefer-es6-class": "off",
+    "prefer-function-component": "off",
     "react-in-jsx-scope": "off",
     "require-render-return": "off",
     "rules-of-hooks": "off",
-    "self-closing-comp": [
-      "off",
-      {
-        "component": true,
-        "html": true,
-      },
-    ],
-    "state-in-constructor": ["off", "always"],
-    "style-prop-object": [
-      "off",
-      {
-        "allow": [],
-      },
-    ],
+    "self-closing-comp": "off",
+    "state-in-constructor": "off",
+    "style-prop-object": "off",
     "void-dom-elements-no-children": "off",
   },
 }

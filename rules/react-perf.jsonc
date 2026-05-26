@@ -5,6 +5,6 @@
     "jsx-no-jsx-as-prop": "off",
     "jsx-no-new-array-as-prop": "off",
     "jsx-no-new-function-as-prop": "off",
-    "jsx-no-new-object-as-prop": "off"
-  }
+    "jsx-no-new-object-as-prop": "off",
+  },
 }

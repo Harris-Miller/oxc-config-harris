@@ -2,128 +2,38 @@
   "$schema": "../node_modules/oxlint/configuration_schema.json",
   "plugins": ["import"],
   "rules": {
-    "consistent-type-specifier-style": ["off", "prefer-top-level"],
+    "consistent-type-specifier-style": "off",
     "default": "off",
     "export": "off",
     "exports-last": "off",
-    "extensions": [
-      "off",
-      {
-        "checkTypeImports": false,
-        "ignorePackages": false,
-        "pathGroupOverrides": [],
-      },
-    ],
-    "first": ["off", "absolute-first"],
+    "extensions": "off",
+    "first": "off",
     "group-exports": "off",
-    "max-dependencies": [
-      "off",
-      {
-        "ignoreTypeImports": false,
-        "max": 10,
-      },
-    ],
+    "max-dependencies": "off",
     "named": "off",
-    "namespace": [
-      "off",
-      {
-        "allowComputed": false,
-      },
-    ],
-    "newline-after-import": [
-      "off",
-      {
-        "considerComments": false,
-        "count": 1,
-        "exactCount": false,
-      },
-    ],
-    "no-absolute-path": [
-      "off",
-      {
-        "amd": false,
-        "commonjs": true,
-        "esmodule": true,
-      },
-    ],
+    "namespace": "off",
+    "newline-after-import": "off",
+    "no-absolute-path": "off",
     "no-amd": "off",
-    "no-anonymous-default-export": [
-      "off",
-      {
-        "allowAnonymousClass": false,
-        "allowAnonymousFunction": false,
-        "allowArray": false,
-        "allowArrowFunction": false,
-        "allowCallExpression": true,
-        "allowLiteral": false,
-        "allowNew": false,
-        "allowObject": false,
-      },
-    ],
-    "no-commonjs": [
-      "off",
-      {
-        "allowConditionalRequire": true,
-        "allowPrimitiveModules": false,
-        "allowRequire": false,
-      },
-    ],
-    "no-cycle": [
-      "off",
-      {
-        "allowUnsafeDynamicCyclicDependency": false,
-        "ignoreExternal": false,
-        "ignoreTypes": true,
-        "maxDepth": 4294967295,
-      },
-    ],
+    "no-anonymous-default-export": "off",
+    "no-commonjs": "off",
+    "no-cycle": "off",
     "no-default-export": "off",
-    "no-duplicates": [
-      "off",
-      {
-        "considerQueryString": false,
-        "preferInline": false,
-      },
-    ],
-    "no-dynamic-require": [
-      "off",
-      {
-        "esmodule": false,
-      },
-    ],
+    "no-duplicates": "off",
+    "no-dynamic-require": "off",
     "no-empty-named-blocks": "off",
     "no-mutable-exports": "off",
     "no-named-as-default": "off",
     "no-named-as-default-member": "off",
     "no-named-default": "off",
     "no-named-export": "off",
-    "no-namespace": [
-      "off",
-      {
-        "ignore": [],
-      },
-    ],
-    "no-nodejs-modules": [
-      "off",
-      {
-        "allow": [],
-      },
-    ],
+    "no-namespace": "off",
+    "no-nodejs-modules": "off",
     "no-relative-parent-imports": "off",
     "no-self-import": "off",
-    "no-unassigned-import": [
-      "off",
-      {
-        "allow": [],
-      },
-    ],
+    "no-unassigned-import": "off",
     "no-webpack-loader-syntax": "off",
-    "prefer-default-export": [
-      "off",
-      {
-        "target": "single",
-      },
-    ],
+    "prefer-default-export": "off",
     "unambiguous": "off",
   },
 }

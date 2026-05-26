@@ -1,0 +1,73 @@
+{
+  "name": "oxlint-config-harris",
+  "version": "0.1.0",
+  "description": "Harris' Oxlint and Oxfmt config",
+  "keywords": [
+    "config",
+    "formatter",
+    "harris",
+    "javascript",
+    "linter",
+    "oxfmt",
+    "oxlint",
+    "react",
+    "styleguide",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Harris Miller <harrismillerconsulting@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/Harris-Miller/eslint-config-harris.git"
+  },
+  "files": [
+    "core",
+    "jest",
+    "react",
+    "typescript",
+    "base.js",
+    "index.js",
+    "globals.js"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./base": "./base.js",
+    "./package.json": "./package.json",
+    "./core": "./core/core.js",
+    "./format": "./core/format.js",
+    "./typescript": "./typescript/typescript.js",
+    "./react": "./react/react.js",
+    "./jest": "./jest/jest.js",
+    "./globals": "./globals.js",
+    "./unmigrated": "./UNMIGRATED.md"
+  },
+  "scripts": {
+    "lint": "oxlint",
+    "format": "oxfmt --check",
+    "format:fix": "oxfmt"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.11",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-typescript-sort-keys": "^3.3.0",
+    "globals": "^17.4.0"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.66.0",
+    "oxlint-tsgolint": "^0.23.0"
+  },
+  "peerDependencies": {
+    "oxfmt": ">=0.36.0",
+    "oxlint": ">=1.66.0",
+    "oxlint-tsgolint": ">=0.22.1"
+  },
+  "peerDependenciesMeta": {
+    "oxlint-tsgolint": {
+      "optional": true
+    }
+  },
+  "packageManager": "pnpm@10.30.1"
+}

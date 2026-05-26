@@ -45,8 +45,8 @@
   },
   "scripts": {
     "lint": "oxlint",
-    "format": "oxfmt --check",
-    "format:fix": "oxfmt"
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.11",

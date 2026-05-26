@@ -1,7 +1,8 @@
 {
-  "name": "oxlint-config-harris",
+  "name": "oxc-config-harris",
+  "private": true,
   "version": "0.1.0",
-  "description": "Harris' Oxlint and Oxfmt config",
+  "description": "Harris' Personal Shared Oxlint and Oxfmt configs monorepo",
   "keywords": [
     "config",
     "formatter",
@@ -18,7 +19,7 @@
   "author": "Harris Miller <harrismillerconsulting@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/Harris-Miller/eslint-config-harris.git"
+    "url": "https://gitlab.com/Harris-Miller/oxc-config-harris.git"
   },
   "files": [
     "core",

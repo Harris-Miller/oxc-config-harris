@@ -1,20 +1,6 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "extends": [
-    "./rules/eslint.jsonc",
-    "./rules/import.jsonc",
-    "./rules/jsdoc.jsonc",
-    "./rules/node.jsonc",
-    "./rules/oxc.jsonc",
-    "./rules/promise.jsonc",
-    "./rules/unicorn.jsonc",
-  ],
-  "options": {
-    "typeAware": true,
-  },
-  "env": {
-    "node": true,
-  },
+  "extends": ["./configs/typescript.jsonc", "./configs/node.jsonc"],
   "rules": {
     "sort-keys": "off",
   },

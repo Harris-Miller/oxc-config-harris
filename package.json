@@ -22,21 +22,13 @@
     "url": "https://gitlab.com/Harris-Miller/oxc-config-harris.git"
   },
   "files": [
-    "core",
-    "jest",
-    "react",
-    "typescript",
-    "base.js",
-    "index.js",
-    "globals.js"
+    "configs",
+    "rules"
   ],
   "type": "module",
   "exports": {
-    ".": "./index.ts",
-    "./base": "./base.ts",
-    "./package.json": "./package.json",
-    "./react": "./react/react.ts",
-    "./jest": "./jest/jest.ts"
+    "./configs/*.jsonc": "./configs/*.jsonc",
+    "./package.json": "./package.json"
   },
   "scripts": {
     "lint": "oxlint --deny-warnings",

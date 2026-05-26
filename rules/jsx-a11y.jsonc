@@ -14,13 +14,7 @@
     "anchor-ambiguous-text": [
       "off",
       {
-        "words": [
-          "click here",
-          "here",
-          "link",
-          "a link",
-          "learn more"
-        ]
+        "words": ["click here", "here", "link", "a link", "learn more"]
       }
     ],
     "anchor-has-content": "off",
@@ -44,9 +38,7 @@
     "autocomplete-valid": [
       "off",
       {
-        "inputComponents": [
-          "input"
-        ]
+        "inputComponents": ["input"]
       }
     ],
     "click-events-have-key-events": "off",
@@ -66,28 +58,14 @@
     "img-redundant-alt": [
       "off",
       {
-        "components": [
-          "img"
-        ],
-        "words": [
-          "image",
-          "photo",
-          "picture"
-        ]
+        "components": ["img"],
+        "words": ["image", "photo", "picture"]
       }
     ],
     "interactive-supports-focus": [
       "off",
       {
-        "tabbable": [
-          "button",
-          "checkbox",
-          "link",
-          "searchbox",
-          "spinbutton",
-          "switch",
-          "textbox"
-        ]
+        "tabbable": ["button", "checkbox", "link", "searchbox", "spinbutton", "switch", "textbox"]
       }
     ],
     "label-has-associated-control": [
@@ -96,40 +74,24 @@
         "assert": "either",
         "controlComponents": [],
         "depth": 2,
-        "labelAttributes": [
-          "alt",
-          "aria-label",
-          "aria-labelledby"
-        ],
-        "labelComponents": [
-          "label"
-        ]
+        "labelAttributes": ["alt", "aria-label", "aria-labelledby"],
+        "labelComponents": ["label"]
       }
     ],
     "lang": "off",
     "media-has-caption": [
       "off",
       {
-        "audio": [
-          "audio"
-        ],
-        "track": [
-          "track"
-        ],
-        "video": [
-          "video"
-        ]
+        "audio": ["audio"],
+        "track": ["track"],
+        "video": ["video"]
       }
     ],
     "mouse-events-have-key-events": [
       "off",
       {
-        "hoverInHandlers": [
-          "onMouseOver"
-        ],
-        "hoverOutHandlers": [
-          "onMouseOut"
-        ]
+        "hoverInHandlers": ["onMouseOver"],
+        "hoverOutHandlers": ["onMouseOut"]
       }
     ],
     "no-access-key": "off",
@@ -143,92 +105,35 @@
     "no-distracting-elements": [
       "off",
       {
-        "elements": [
-          "marquee",
-          "blink"
-        ]
+        "elements": ["marquee", "blink"]
       }
     ],
-    "no-interactive-element-to-noninteractive-role": [
-      "off"
-    ],
+    "no-interactive-element-to-noninteractive-role": ["off"],
     "no-noninteractive-element-interactions": [
       "off",
       {
-        "handlers": [
-          "onClick",
-          "onError",
-          "onLoad",
-          "onMouseDown",
-          "onMouseUp",
-          "onKeyPress",
-          "onKeyDown",
-          "onKeyUp"
-        ],
-        "alert": [
-          "onKeyUp",
-          "onKeyDown",
-          "onKeyPress"
-        ],
-        "body": [
-          "onError",
-          "onLoad"
-        ],
-        "dialog": [
-          "onKeyUp",
-          "onKeyDown",
-          "onKeyPress"
-        ],
-        "iframe": [
-          "onError",
-          "onLoad"
-        ],
-        "img": [
-          "onError",
-          "onLoad"
-        ]
+        "handlers": ["onClick", "onError", "onLoad", "onMouseDown", "onMouseUp", "onKeyPress", "onKeyDown", "onKeyUp"],
+        "alert": ["onKeyUp", "onKeyDown", "onKeyPress"],
+        "body": ["onError", "onLoad"],
+        "dialog": ["onKeyUp", "onKeyDown", "onKeyPress"],
+        "iframe": ["onError", "onLoad"],
+        "img": ["onError", "onLoad"]
       }
     ],
     "no-noninteractive-element-to-interactive-role": [
       "off",
       {
-        "ul": [
-          "menu",
-          "menubar",
-          "radiogroup",
-          "tablist",
-          "tree",
-          "treegrid"
-        ],
-        "ol": [
-          "menu",
-          "menubar",
-          "radiogroup",
-          "tablist",
-          "tree",
-          "treegrid"
-        ],
-        "li": [
-          "menuitem",
-          "menuitemcheckbox",
-          "menuitemradio",
-          "row",
-          "tab",
-          "treeitem"
-        ],
-        "fieldset": [
-          "radiogroup",
-          "presentation"
-        ]
+        "ul": ["menu", "menubar", "radiogroup", "tablist", "tree", "treegrid"],
+        "ol": ["menu", "menubar", "radiogroup", "tablist", "tree", "treegrid"],
+        "li": ["menuitem", "menuitemcheckbox", "menuitemradio", "row", "tab", "treeitem"],
+        "fieldset": ["radiogroup", "presentation"]
       }
     ],
     "no-noninteractive-tabindex": [
       "off",
       {
         "allowExpressionValues": true,
-        "roles": [
-          "tabpanel"
-        ],
+        "roles": ["tabpanel"],
         "tags": []
       }
     ],

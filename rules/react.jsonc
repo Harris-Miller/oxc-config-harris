@@ -28,10 +28,7 @@
     "forbid-component-props": [
       "off",
       {
-        "forbid": [
-          "className",
-          "style"
-        ]
+        "forbid": ["className", "style"]
       }
     ],
     "forbid-dom-props": [
@@ -75,16 +72,11 @@
       "off",
       {
         "allow": "always",
-        "extensions": [
-          "jsx"
-        ],
+        "extensions": ["jsx"],
         "ignoreFilesWithoutCode": false
       }
     ],
-    "jsx-fragments": [
-      "off",
-      "syntax"
-    ],
+    "jsx-fragments": ["off", "syntax"],
     "jsx-handler-names": [
       "off",
       {
@@ -160,14 +152,8 @@
     "no-clone-element": "off",
     "no-danger": "off",
     "no-danger-with-children": "off",
-    "no-did-mount-set-state": [
-      "off",
-      "allowed"
-    ],
-    "no-did-update-set-state": [
-      "off",
-      "allowed"
-    ],
+    "no-did-mount-set-state": ["off", "allowed"],
+    "no-did-update-set-state": ["off", "allowed"],
     "no-direct-mutation-state": "off",
     "no-find-dom-node": "off",
     "no-is-mounted": "off",
@@ -212,10 +198,7 @@
         "propNamePattern": "render*"
       }
     ],
-    "no-will-update-set-state": [
-      "off",
-      "allowed"
-    ],
+    "no-will-update-set-state": ["off", "allowed"],
     "only-export-components": [
       "off",
       {
@@ -225,10 +208,7 @@
         "customHOCs": []
       }
     ],
-    "prefer-es6-class": [
-      "off",
-      "always"
-    ],
+    "prefer-es6-class": ["off", "always"],
     "prefer-function-component": [
       "off",
       {
@@ -246,10 +226,7 @@
         "html": true
       }
     ],
-    "state-in-constructor": [
-      "off",
-      "always"
-    ],
+    "state-in-constructor": ["off", "always"],
     "style-prop-object": [
       "off",
       {

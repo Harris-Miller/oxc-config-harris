@@ -2,10 +2,7 @@
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": ["import"],
   "rules": {
-    "consistent-type-specifier-style": [
-      "off",
-      "prefer-top-level"
-    ],
+    "consistent-type-specifier-style": ["off", "prefer-top-level"],
     "default": "off",
     "export": "off",
     "exports-last": "off",
@@ -17,10 +14,7 @@
         "pathGroupOverrides": []
       }
     ],
-    "first": [
-      "off",
-      "absolute-first"
-    ],
+    "first": ["off", "absolute-first"],
     "group-exports": "off",
     "max-dependencies": [
       "off",

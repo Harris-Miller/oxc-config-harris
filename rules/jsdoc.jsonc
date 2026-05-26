@@ -35,9 +35,7 @@
         "checkRestProperty": false,
         "checkSetters": true,
         "checkTypesPattern": "^(?:[oO]bject|[aA]rray|PlainObject|Generic(?:Object|Array))$",
-        "exemptedBy": [
-          "inheritdoc"
-        ]
+        "exemptedBy": ["inheritdoc"]
       }
     ],
     "require-param-description": "off",
@@ -52,9 +50,7 @@
       {
         "checkConstructors": false,
         "checkGetters": true,
-        "exemptedBy": [
-          "inheritdoc"
-        ],
+        "exemptedBy": ["inheritdoc"],
         "forceRequireReturn": false,
         "forceReturnsWithAsync": false
       }
@@ -66,9 +62,7 @@
     "require-yields": [
       "off",
       {
-        "exemptedBy": [
-          "inheritdoc"
-        ],
+        "exemptedBy": ["inheritdoc"],
         "forceRequireYields": false,
         "withGeneratorTag": false
       }

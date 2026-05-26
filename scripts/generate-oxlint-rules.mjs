@@ -23,10 +23,8 @@ const outputPath =
 
 const pluginName = PLUGIN_BY_SCOPE[scope] ?? scope;
 
-const rules = JSON.parse(
-  execSync('pnpm exec oxlint --rules -f json . 2>/dev/null', { encoding: 'utf8' }),
-)
-  .filter((r) => r.scope === scope)
+const rules = JSON.parse(execSync('pnpm exec oxlint --rules -f json . 2>/dev/null', { encoding: 'utf8' }))
+  .filter(r => r.scope === scope)
   .sort((a, b) => a.value.localeCompare(b.value));
 
 /** Per-scope defaults from oxlint Rust sources when docs are ambiguous or incomplete. */
@@ -68,10 +66,7 @@ const MANUAL_DEFAULTS_BY_SCOPE = {
     'object-shorthand': ['always'],
     'operator-assignment': ['always'],
     radix: ['always'],
-    'sort-keys': [
-      'asc',
-      { allowLineSeparatedGroups: false, caseSensitive: true, minKeys: 2, natural: false },
-    ],
+    'sort-keys': ['asc', { allowLineSeparatedGroups: false, caseSensitive: true, minKeys: 2, natural: false }],
     'unicode-bom': ['never'],
     yoda: ['never', { exceptRange: false, onlyEquality: false }],
   },
@@ -93,16 +88,7 @@ const MANUAL_DEFAULTS_BY_SCOPE = {
     'no-interactive-element-to-noninteractive-role': [{}],
     'no-noninteractive-element-interactions': [
       {
-        handlers: [
-          'onClick',
-          'onError',
-          'onLoad',
-          'onMouseDown',
-          'onMouseUp',
-          'onKeyPress',
-          'onKeyDown',
-          'onKeyUp',
-        ],
+        handlers: ['onClick', 'onError', 'onLoad', 'onMouseDown', 'onMouseUp', 'onKeyPress', 'onKeyDown', 'onKeyUp'],
         alert: ['onKeyUp', 'onKeyDown', 'onKeyPress'],
         body: ['onError', 'onLoad'],
         dialog: ['onKeyUp', 'onKeyDown', 'onKeyPress'],
@@ -123,10 +109,7 @@ const MANUAL_DEFAULTS_BY_SCOPE = {
     'forbid-component-props': [{ forbid: ['className', 'style'] }],
     'forbid-dom-props': [{ forbid: [] }],
     'forbid-elements': [{ forbid: [] }],
-    'jsx-boolean-value': [
-      'never',
-      { always: [], assumeUndefinedIsFalse: false, never: [] },
-    ],
+    'jsx-boolean-value': ['never', { always: [], assumeUndefinedIsFalse: false, never: [] }],
     'jsx-fragments': ['syntax'],
     'no-did-mount-set-state': ['allowed'],
     'no-did-update-set-state': ['allowed'],
@@ -154,10 +137,7 @@ function coerceDefault(raw) {
       /* fall through */
     }
   }
-  while (
-    (v.startsWith('"') && v.endsWith('"')) ||
-    (v.startsWith("'") && v.endsWith("'"))
-  ) {
+  while ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) {
     v = v.slice(1, -1);
   }
   return v;

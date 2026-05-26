@@ -5,9 +5,7 @@
     "always-return": [
       "off",
       {
-        "ignoreAssignmentVariable": [
-          "globalThis"
-        ],
+        "ignoreAssignmentVariable": ["globalThis"],
         "ignoreLastCallback": false
       }
     ],
@@ -17,20 +15,13 @@
       {
         "allowFinally": false,
         "allowThen": false,
-        "terminationMethod": [
-          "catch"
-        ]
+        "terminationMethod": ["catch"]
       }
     ],
     "no-callback-in-promise": [
       "off",
       {
-        "callbacks": [
-          "callback",
-          "cb",
-          "done",
-          "next"
-        ],
+        "callbacks": ["callback", "cb", "done", "next"],
         "exceptions": [],
         "timeoutsErr": false
       }

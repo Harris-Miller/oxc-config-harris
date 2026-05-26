@@ -3,10 +3,7 @@
   "plugins": ["node"],
   "rules": {
     "global-require": "off",
-    "handle-callback-err": [
-      "off",
-      "err"
-    ],
+    "handle-callback-err": ["off", "err"],
     "no-exports-assign": "off",
     "no-new-require": "off",
     "no-path-concat": "off",

@@ -58,10 +58,7 @@
       }
     ],
     "constructor-super": "error",
-    "curly": [
-      "off",
-      "all"
-    ],
+    "curly": ["off", "all"],
     "default-case": [
       "off",
       {
@@ -78,28 +75,16 @@
       }
     ],
     "for-direction": "error",
-    "func-name-matching": [
-      "off",
-      "always"
-    ],
-    "func-names": [
-      "off",
-      "always"
-    ],
-    "func-style": [
-      "off",
-      "expression"
-    ],
+    "func-name-matching": ["off", "always"],
+    "func-names": ["off", "always"],
+    "func-style": ["off", "expression"],
     "getter-return": [
       "error",
       {
         "allowImplicit": false
       }
     ],
-    "grouped-accessor-pairs": [
-      "off",
-      "anyOrder"
-    ],
+    "grouped-accessor-pairs": ["off", "anyOrder"],
     "guard-for-in": "off",
     "id-length": [
       "off",
@@ -111,14 +96,8 @@
       }
     ],
     "id-match": "off",
-    "init-declarations": [
-      "off",
-      "always"
-    ],
-    "logical-assignment-operators": [
-      "off",
-      "always"
-    ],
+    "init-declarations": ["off", "always"],
+    "logical-assignment-operators": ["off", "always"],
     "max-classes-per-file": [
       "off",
       {
@@ -206,10 +185,7 @@
     "no-case-declarations": "off",
     "no-class-assign": "error",
     "no-compare-neg-zero": "error",
-    "no-cond-assign": [
-      "error",
-      "except-parens"
-    ],
+    "no-cond-assign": ["error", "except-parens"],
     "no-console": [
       "off",
       {
@@ -443,17 +419,241 @@
     "no-restricted-globals": [
       "off",
       {
-        "restrictedGlobals": {}
+        "restrictedGlobals": {
+          "addEventListener": {
+            "name": "addEventListener",
+            "message": "Use window.addEventListener instead"
+          },
+          "blur": {
+            "name": "blur",
+            "message": "Use window.blur instead"
+          },
+          "close": {
+            "name": "close",
+            "message": "Use window.close instead"
+          },
+          "closed": {
+            "name": "closed",
+            "message": "Use window.closed instead"
+          },
+          "confirm": {
+            "name": "confirm",
+            "message": "Use window.confirminstead"
+          },
+          "defaultStatus": {
+            "name": "defaultStatus",
+            "message": "Use window.defaultStatus instead"
+          },
+          "defaultstatus": {
+            "name": "defaultstatus",
+            "message": "Use window.defaultstatus instead"
+          },
+          "event": {
+            "name": "event",
+            "message": "Use window.event instead"
+          },
+          "external": {
+            "name": "external",
+            "message": "Use window.external instead"
+          },
+          "find": {
+            "name": "find",
+            "message": "Use window.find instead"
+          },
+          "focus": {
+            "name": "focus",
+            "message": "Use window.focus instead"
+          },
+          "frameElement": {
+            "name": "frameElement",
+            "message": "Use window.frameElement instead"
+          },
+          "frames": {
+            "name": "frames",
+            "message": "Use window.frames instead"
+          },
+          "history": {
+            "name": "history",
+            "message": "Use window.history instead"
+          },
+          "innerHeight": {
+            "name": "innerHeight",
+            "message": "Use window.innerHeight instead"
+          },
+          "innerWidth": {
+            "name": "innerWidth",
+            "message": "Use window.innerWidth instead"
+          },
+          "length": {
+            "name": "length",
+            "message": "Use window.length instead"
+          },
+          "location": {
+            "name": "location",
+            "message": "Use window.location instead"
+          },
+          "locationbar": {
+            "name": "locationbar",
+            "message": "Use window.locationbar instead"
+          },
+          "menubar": {
+            "name": "menubar",
+            "message": "Use window.menubar instead"
+          },
+          "moveBy": {
+            "name": "moveBy",
+            "message": "Use window.moveBy instead"
+          },
+          "moveTo": {
+            "name": "moveTo",
+            "message": "Use window.moveTo instead"
+          },
+          "name": {
+            "name": "name",
+            "message": "Use window.name instead"
+          },
+          "onblur": {
+            "name": "onblur",
+            "message": "Use window.onblur instead"
+          },
+          "onerror": {
+            "name": "onerror",
+            "message": "Use window.onerror instead"
+          },
+          "onfocus": {
+            "name": "onfocus",
+            "message": "Use window.onfocus instead"
+          },
+          "onload": {
+            "name": "onload",
+            "message": "Use window.onload instead"
+          },
+          "onresize": {
+            "name": "onresize",
+            "message": "Use window.onresize instead"
+          },
+          "onunload": {
+            "name": "onunload",
+            "message": "Use window.onunload instead"
+          },
+          "open": {
+            "name": "open",
+            "message": "Use window.open instead"
+          },
+          "opener": {
+            "name": "opener",
+            "message": "Use window.opener instead"
+          },
+          "opera": {
+            "name": "opera",
+            "message": "Use window.opera instead"
+          },
+          "outerHeight": {
+            "name": "outerHeight",
+            "message": "Use window.outerHeight instead"
+          },
+          "outerWidth": {
+            "name": "outerWidth",
+            "message": "Use window.outerWidth instead"
+          },
+          "pageXOffset": {
+            "name": "pageXOffset",
+            "message": "Use window.pageXOffset instead"
+          },
+          "pageYOffset": {
+            "name": "pageYOffset",
+            "message": "Use window.pageYOffset instead"
+          },
+          "parent": {
+            "name": "parent",
+            "message": "Use window.parent instead"
+          },
+          "print": {
+            "name": "print",
+            "message": "Use window.print instead"
+          },
+          "removeEventListener": {
+            "name": "removeEventListener",
+            "message": "Use window.removeEventListener instead"
+          },
+          "resizeBy": {
+            "name": "resizeBy",
+            "message": "Use window.resizeBy instead"
+          },
+          "resizeTo": {
+            "name": "resizeTo",
+            "message": "Use window.resizeTo instead"
+          },
+          "screen": {
+            "name": "screen",
+            "message": "Use window.screen instead"
+          },
+          "screenLeft": {
+            "name": "screenLeft",
+            "message": "Use window.screenLeft instead"
+          },
+          "screenTop": {
+            "name": "screenTop",
+            "message": "Use window.screenTop instead"
+          },
+          "screenX": {
+            "name": "screenX",
+            "message": "Use window.screenX instead"
+          },
+          "screenY": {
+            "name": "screenY",
+            "message": "Use window.screenY instead"
+          },
+          "scroll": {
+            "name": "scroll",
+            "message": "Use window.scroll instead"
+          },
+          "scrollbars": {
+            "name": "scrollbars",
+            "message": "Use window.scrollbars instead"
+          },
+          "scrollBy": {
+            "name": "scrollBy",
+            "message": "Use window.scrollBy instead"
+          },
+          "scrollTo": {
+            "name": "scrollTo",
+            "message": "Use window.scrollTo instead"
+          },
+          "scrollX": {
+            "name": "scrollX",
+            "message": "Use window.scrollX instead"
+          },
+          "scrollY": {
+            "name": "scrollY",
+            "message": "Use window.scrollY instead"
+          },
+          "status": {
+            "name": "status",
+            "message": "Use window.status instead"
+          },
+          "statusbar": {
+            "name": "statusbar",
+            "message": "Use window.statusbar instead"
+          },
+          "stop": {
+            "name": "stop",
+            "message": "Use window.stop instead"
+          },
+          "toolbar": {
+            "name": "toolbar",
+            "message": "Use window.toolbar instead"
+          },
+          "top": {
+            "name": "top",
+            "message": "Use window.top instead"
+          }
+        }
       }
     ],
     "no-restricted-imports": "off",
-    "no-restricted-properties": [
-      "off"
-    ],
-    "no-return-assign": [
-      "off",
-      "except-parens"
-    ],
+    "no-restricted-properties": ["off"],
+    "no-return-assign": ["off", "except-parens"],
     "no-script-url": "off",
     "no-self-assign": [
       "error",
@@ -611,14 +811,8 @@
     ],
     "no-warning-comments": "off",
     "no-with": "error",
-    "object-shorthand": [
-      "off",
-      "always"
-    ],
-    "operator-assignment": [
-      "off",
-      "always"
-    ],
+    "object-shorthand": ["off", "always"],
+    "operator-assignment": ["off", "always"],
     "prefer-arrow-callback": [
       "off",
       {
@@ -671,10 +865,7 @@
         "requireCatchParameter": false
       }
     ],
-    "radix": [
-      "off",
-      "always"
-    ],
+    "radix": ["off", "always"],
     "require-await": "off",
     "require-unicode-regexp": "off",
     "require-yield": "error",
@@ -685,12 +876,7 @@
         "ignoreCase": false,
         "ignoreDeclarationSort": false,
         "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": [
-          "none",
-          "all",
-          "multiple",
-          "single"
-        ]
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
       }
     ],
     "sort-keys": [
@@ -710,10 +896,7 @@
       }
     ],
     "symbol-description": "off",
-    "unicode-bom": [
-      "off",
-      "never"
-    ],
+    "unicode-bom": ["off", "never"],
     "use-isnan": [
       "error",
       {

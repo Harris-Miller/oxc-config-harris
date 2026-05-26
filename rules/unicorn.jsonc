@@ -194,10 +194,7 @@
     "prefer-object-from-entries": [
       "off",
       {
-        "functions": [
-          "_.fromPairs",
-          "lodash.fromPairs"
-        ]
+        "functions": ["_.fromPairs", "lodash.fromPairs"]
       }
     ],
     "prefer-optional-catch-binding": "off",
@@ -217,31 +214,19 @@
     "prefer-structured-clone": [
       "off",
       {
-        "functions": [
-          "cloneDeep",
-          "utils.clone"
-        ]
+        "functions": ["cloneDeep", "utils.clone"]
       }
     ],
-    "prefer-ternary": [
-      "off",
-      "always"
-    ],
+    "prefer-ternary": ["off", "always"],
     "prefer-top-level-await": "off",
     "prefer-type-error": "off",
-    "relative-url-style": [
-      "off",
-      "never"
-    ],
+    "relative-url-style": ["off", "never"],
     "require-array-join-separator": "off",
     "require-module-attributes": "off",
     "require-module-specifiers": "off",
     "require-number-to-fixed-digits-argument": "off",
     "require-post-message-target-origin": "off",
-    "switch-case-braces": [
-      "off",
-      "always"
-    ],
+    "switch-case-braces": ["off", "always"],
     "switch-case-break-position": "off",
     "text-encoding-identifier-case": [
       "off",

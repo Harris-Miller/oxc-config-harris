@@ -4,12 +4,9 @@
     "./rules/eslint.jsonc",
     "./rules/import.jsonc",
     "./rules/jsdoc.jsonc",
-    "./rules/jsx-a11y.jsonc",
     "./rules/node.jsonc",
     "./rules/oxc.jsonc",
     "./rules/promise.jsonc",
-    "./rules/react-perf.jsonc",
-    "./rules/react.jsonc",
     "./rules/unicorn.jsonc",
   ],
   "options": {

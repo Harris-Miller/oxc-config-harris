@@ -1,0 +1,14 @@
+{
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
+  "extends": [
+    "./rules/eslint.jsonc",
+    "./rules/import.jsonc",
+    // "./rules/jsdoc.jsonc",
+    "./rules/oxc.jsonc",
+    // "./rules/promise.jsonc",
+    "./rules/unicorn.jsonc",
+  ],
+  "env": {
+    "builtin": true,
+  },
+}

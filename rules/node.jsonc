@@ -4,7 +4,7 @@
   "rules": {
     "global-require": "off",
     "handle-callback-err": "off",
-    "no-exports-assign": "off",
+    "no-exports-assign": "error",
     "no-new-require": "off",
     "no-path-concat": "off",
     "no-process-env": "off",

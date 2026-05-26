@@ -1,70 +1,22 @@
 import { defineConfig } from 'oxlint';
 
+import { jsxA11yRules } from './jsx-a11y.js';
+import { reactPerfRules } from './react-perf.js';
+
 const reactRules = defineConfig({
+  extends: [jsxA11yRules, reactPerfRules],
   overrides: [
     {
       files: ['**/*.jsx', '**/*.tsx'],
-      plugins: ['react', 'jsx-a11y', 'react-perf'],
+      plugins: ['react'],
       settings: {
         react: {
           version: 'detect',
         },
-        'jsx-a11y': {
-          components: {
-            Link: 'a',
-          },
-        },
       },
       rules: {
-        'constructor-super': 'error',
-        'for-direction': 'error',
-        'getter-return': 'error',
-        'no-async-promise-executor': 'error',
-        'no-case-declarations': 'error',
-        'no-class-assign': 'error',
-        'no-compare-neg-zero': 'error',
-        'no-cond-assign': 'error',
-        'no-const-assign': 'error',
-        'no-control-regex': 'error',
-        'no-debugger': 'error',
-        'no-delete-var': 'error',
-        'no-dupe-class-members': 'error',
-        'no-dupe-else-if': 'error',
-        'no-dupe-keys': 'error',
-        'no-duplicate-case': 'error',
-        'no-empty': 'error',
-        'no-empty-character-class': 'error',
-        'no-empty-pattern': 'error',
-        'no-ex-assign': 'error',
-        'no-extra-boolean-cast': 'error',
-        'no-fallthrough': 'error',
-        'no-func-assign': 'error',
-        'no-global-assign': 'error',
-        'no-import-assign': 'error',
-        'no-invalid-regexp': 'error',
-        'no-irregular-whitespace': 'error',
-        'no-loss-of-precision': 'error',
-        'no-misleading-character-class': 'error',
-        'no-nonoctal-decimal-escape': 'error',
-        'no-obj-calls': 'error',
-        'no-prototype-builtins': 'error',
-        'no-regex-spaces': 'error',
-        'no-self-assign': 'error',
-        'no-setter-return': 'error',
-        'no-sparse-arrays': 'error',
-        'no-this-before-super': 'error',
-        'no-unreachable': 'error',
-        'no-unsafe-finally': 'error',
-        'no-unsafe-negation': 'error',
-        'no-unsafe-optional-chaining': 'error',
-        'no-unused-vars': 'error',
-        'no-useless-backreference': 'error',
-        'no-useless-catch': 'error',
-        'no-useless-escape': 'error',
-        'no-with': 'error',
-        'require-yield': 'error',
-        'use-isnan': 'error',
-        'valid-typeof': 'error',
+        // TODO: I don't think the migration worked correctly as what got left here were rules that were not react specific
+        // I need to re-migrate from eslint-config-harris
       },
     },
   ],

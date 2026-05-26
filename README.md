@@ -4,13 +4,11 @@ Personal [Oxlint](https://oxc.rs/docs/guide/usage/linter/) and [Oxfmt](https://o
 
 ## TODO
 
-- Turn this into a mono repo with separate `oxlint-config-harris` and `oxfmt-config-harris` packages
-- Simplify the lint definitions
 - Update all README files
-- remove ai agent create scripts and the `.agents` skills folder which has oxc migration skills
-- remove extraneous `package.json` dependencies from the migration
 - Keep UNMIGRATED.md, but remove the stuff that doesn't matter. Only keep the things that I want to eventually add in once oxc implements them
   - Keep notes about which rules I _had_ but oxc does not plan to implement
+- Finish separating everything into new `rules/*.ts`
+  - Make sure to manually add in "recommended" rules into each, as oxlint doesn't have a good mechanism for turning those on by "source"
 
 ## Install
 

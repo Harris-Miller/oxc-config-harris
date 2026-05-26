@@ -39,7 +39,7 @@
     "./jest": "./jest/jest.ts"
   },
   "scripts": {
-    "lint": "oxlint --max-warnings=0",
+    "lint": "oxlint --deny-warnings",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "typecheck": "tsc --noEmit"

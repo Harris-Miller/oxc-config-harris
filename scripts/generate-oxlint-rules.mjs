@@ -74,7 +74,7 @@ for (const rule of rules) {
 }
 
 const config = {
-  $schema: './node_modules/oxlint/configuration_schema.json',
+  $schema: '../node_modules/oxlint/configuration_schema.json',
   rules: configRules,
 };
 

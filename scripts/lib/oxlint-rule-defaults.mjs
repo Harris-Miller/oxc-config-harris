@@ -46,6 +46,9 @@ export const MANUAL_DEFAULTS_BY_SCOPE = {
     first: ['absolute-first'],
     'no-nodejs-modules': [{ allow: [] }],
   },
+  jest: {
+    'prefer-snapshot-hint': ['always'],
+  },
   node: {
     'handle-callback-err': ['err'],
   },
@@ -92,6 +95,7 @@ export const MANUAL_DEFAULTS_BY_SCOPE = {
 export const SCOPE_BY_RULES_FILE = {
   'eslint.jsonc': 'eslint',
   'import.jsonc': 'import',
+  'jest.jsonc': 'jest',
   'jsdoc.jsonc': 'jsdoc',
   'jsx-a11y.jsonc': 'jsx_a11y',
   'node.jsonc': 'node',

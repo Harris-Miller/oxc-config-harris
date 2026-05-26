@@ -18,8 +18,6 @@
     "consistent-type-imports": [
       "error",
       {
-        "prefer": "type-imports",
-        "fixStyle": "separate-type-imports",
         "disallowTypeAnnotations": false,
       },
     ],
@@ -51,7 +49,8 @@
     "no-misused-promises": [
       "error",
       {
-        "checksVoidReturn": false,
+        // this was 'false' in eslint-config-harris, but true is default. would like to test this out.
+        "checksVoidReturn": true,
       },
     ],
     "no-misused-spread": "error",
@@ -131,7 +130,13 @@
     "restrict-template-expressions": [
       "error",
       {
+        "allowAny": false,
+        "allowArray": false,
+        "allowBoolean": false,
+        "allowNever": false,
+        "allowNullish": false,
         "allowNumber": true,
+        "allowRegExp": false,
       },
     ],
     "return-await": "off",

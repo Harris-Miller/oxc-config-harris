@@ -4,6 +4,9 @@ import coreConfig from './core/core.ts';
 
 export default defineConfig({
   extends: [coreConfig],
+  options: {
+    typeAware: true,
+  },
   env: {
     node: true,
   },

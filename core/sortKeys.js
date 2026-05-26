@@ -1,8 +1,8 @@
-import { defineConfig } from "oxlint";
+import { defineConfig } from 'oxlint';
 
 const sortKeysConfig = defineConfig({
   rules: {
-    "sort-keys": "error",
+    'sort-keys': 'error',
   },
 });
 

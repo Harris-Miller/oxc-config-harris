@@ -3,6 +3,7 @@
 Personal [Oxlint](https://oxc.rs/docs/guide/usage/linter/) and [Oxfmt](https://oxc.rs/docs/guide/usage/formatter/) configs, split into composable subsets (formerly `eslint-config-harris`).
 
 ## TODO
+
 - Turn this into a mono repo with separate `oxlint-config-harris` and `oxfmt-config-harris` packages
 - Simplify the lint definitions
 - Update all README files
@@ -38,8 +39,8 @@ pnpm add -D oxlint-tsgolint
 ### Lint (`oxlint.config.ts`)
 
 ```ts
-import { defineConfig } from "oxlint";
-import harris from "oxlint-config-harris";
+import { defineConfig } from 'oxlint';
+import harris from 'oxlint-config-harris';
 
 export default defineConfig({
   extends: [harris],
@@ -52,11 +53,11 @@ export default defineConfig({
 Compose subsets:
 
 ```ts
-import { defineConfig } from "oxlint";
-import core from "oxlint-config-harris/core";
-import typescript from "oxlint-config-harris/typescript";
-import react from "oxlint-config-harris/react";
-import jest from "oxlint-config-harris/jest";
+import { defineConfig } from 'oxlint';
+import core from 'oxlint-config-harris/core';
+import typescript from 'oxlint-config-harris/typescript';
+import react from 'oxlint-config-harris/react';
+import jest from 'oxlint-config-harris/jest';
 
 export default defineConfig({
   extends: [core, typescript, react, jest],
@@ -71,7 +72,7 @@ export default defineConfig({
 Oxfmt does not support `extends`; spread the shared config:
 
 ```ts
-import format from "oxlint-config-harris/format";
+import format from 'oxlint-config-harris/format';
 
 export default {
   ...format,

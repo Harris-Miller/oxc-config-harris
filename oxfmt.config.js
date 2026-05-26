@@ -1,4 +1,4 @@
-import formatConfig from "./core/format.js";
+import formatConfig from './core/format.js';
 
 const config = {
   ...formatConfig,

@@ -1,7 +1,7 @@
-import { defineConfig } from "oxlint";
+import { defineConfig } from 'oxlint';
 
-import coreConfig from "./core/core.js";
-import typescriptConfig from "./typescript/typescript.js";
+import coreConfig from './core/core.js';
+import typescriptConfig from './typescript/typescript.js';
 
 const baseConfig = defineConfig({
   extends: [coreConfig, typescriptConfig],

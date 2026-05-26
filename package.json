@@ -1,7 +1,7 @@
 {
   "name": "oxc-config-harris",
-  "private": true,
   "version": "0.1.0",
+  "private": true,
   "description": "Harris' Personal Shared Oxlint and Oxfmt configs monorepo",
   "keywords": [
     "config",

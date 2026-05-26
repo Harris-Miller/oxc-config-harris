@@ -1,21 +1,21 @@
-import fs from "node:fs";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-import { toTsObject } from "./toTsObject.mjs";
+import { toTsObject } from './toTsObject.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const root = path.join(__dirname, "..");
-const full = JSON.parse(fs.readFileSync(path.join(root, ".oxlintrc.json"), "utf8"));
+const root = path.join(__dirname, '..');
+const full = JSON.parse(fs.readFileSync(path.join(root, '.oxlintrc.json'), 'utf8'));
 
-const importRuleKeys = new Set(Object.keys(full.rules).filter((k) => k.startsWith("import/")));
+const importRuleKeys = new Set(Object.keys(full.rules).filter(k => k.startsWith('import/')));
 
 const topRules = { ...full.rules };
-delete topRules["prettier/prettier"];
-delete topRules["sort-keys-fix/sort-keys-fix"];
-topRules["sort-keys"] = "error";
-delete topRules["typescript/consistent-return"];
-delete topRules["typescript/dot-notation"];
+delete topRules['prettier/prettier'];
+delete topRules['sort-keys-fix/sort-keys-fix'];
+topRules['sort-keys'] = 'error';
+delete topRules['typescript/consistent-return'];
+delete topRules['typescript/dot-notation'];
 
 const personalRules = {};
 const importRules = {};
@@ -27,12 +27,10 @@ for (const [key, value] of Object.entries(topRules)) {
   }
 }
 
-const recommendedOverride = full.overrides.find((o) => o.files?.includes("**/*.js"));
-const typescriptOverride = full.overrides.find(
-  (o) => o.files?.includes("**/*.ts") && !o.files?.includes("**/*.jsx"),
-);
-const reactOverride = full.overrides.find((o) => o.files?.includes("**/*.jsx"));
-const jestOverride = full.overrides.find((o) => o.files?.includes("**/*.test.*"));
+const recommendedOverride = full.overrides.find(o => o.files?.includes('**/*.js'));
+const typescriptOverride = full.overrides.find(o => o.files?.includes('**/*.ts') && !o.files?.includes('**/*.jsx'));
+const reactOverride = full.overrides.find(o => o.files?.includes('**/*.jsx'));
+const jestOverride = full.overrides.find(o => o.files?.includes('**/*.test.*'));
 
 const writeJs = (rel, content) => {
   const file = path.join(root, rel);
@@ -41,7 +39,7 @@ const writeJs = (rel, content) => {
 };
 
 writeJs(
-  "core/personal.js",
+  'core/personal.js',
   `import { defineConfig } from 'oxlint';
 
 const personalRules = ${toTsObject(personalRules)};
@@ -55,7 +53,7 @@ export default personalConfig;
 );
 
 writeJs(
-  "core/recommended.js",
+  'core/recommended.js',
   `import { defineConfig } from 'oxlint';
 
 const recommendedRules = ${toTsObject(recommendedOverride.rules)};
@@ -72,7 +70,7 @@ export default recommendedConfig;
 );
 
 writeJs(
-  "core/import.js",
+  'core/import.js',
   `import { defineConfig } from 'oxlint';
 
 const importRules = ${toTsObject(importRules)};
@@ -91,7 +89,7 @@ export default importConfig;
 );
 
 writeJs(
-  "jest/jest.js",
+  'jest/jest.js',
   `import { defineConfig } from 'oxlint';
 
 const jestRules = ${toTsObject(jestOverride.rules)};
@@ -114,32 +112,32 @@ export default jestConfig;
 );
 
 // react-hooks rules are maintained separately (not in migrate output)
-const reactHooksPath = path.join(root, "react/react-hooks.rules.json");
+const reactHooksPath = path.join(root, 'react/react-hooks.rules.json');
 let reactHooksRules = {};
 if (fs.existsSync(reactHooksPath)) {
-  reactHooksRules = JSON.parse(fs.readFileSync(reactHooksPath, "utf8"));
+  reactHooksRules = JSON.parse(fs.readFileSync(reactHooksPath, 'utf8'));
 } else {
   reactHooksRules = {
-    "react-hooks-js/component-hook-factories": "error",
-    "react-hooks-js/config": "error",
-    "react-hooks-js/error-boundaries": "error",
-    "react-hooks-js/gating": "error",
-    "react-hooks-js/globals": "error",
-    "react-hooks-js/immutability": "error",
-    "react-hooks-js/incompatible-library": "error",
-    "react-hooks-js/preserve-manual-memoization": "error",
-    "react-hooks-js/purity": "error",
-    "react-hooks-js/refs": "error",
-    "react-hooks-js/set-state-in-effect": "error",
-    "react-hooks-js/set-state-in-render": "error",
-    "react-hooks-js/static-components": "error",
-    "react-hooks-js/unsupported-syntax": "error",
-    "react-hooks-js/use-memo": "error",
+    'react-hooks-js/component-hook-factories': 'error',
+    'react-hooks-js/config': 'error',
+    'react-hooks-js/error-boundaries': 'error',
+    'react-hooks-js/gating': 'error',
+    'react-hooks-js/globals': 'error',
+    'react-hooks-js/immutability': 'error',
+    'react-hooks-js/incompatible-library': 'error',
+    'react-hooks-js/preserve-manual-memoization': 'error',
+    'react-hooks-js/purity': 'error',
+    'react-hooks-js/refs': 'error',
+    'react-hooks-js/set-state-in-effect': 'error',
+    'react-hooks-js/set-state-in-render': 'error',
+    'react-hooks-js/static-components': 'error',
+    'react-hooks-js/unsupported-syntax': 'error',
+    'react-hooks-js/use-memo': 'error',
   };
 }
 
 writeJs(
-  "react/react.js",
+  'react/react.js',
   `import { defineConfig } from 'oxlint';
 
 const reactRules = ${toTsObject(reactOverride.rules)};
@@ -180,7 +178,7 @@ export default reactConfig;
 );
 
 writeJs(
-  "typescript/typescript.js",
+  'typescript/typescript.js',
   `import { defineConfig } from 'oxlint';
 
 const typescriptRules = ${toTsObject(typescriptOverride.rules)};
@@ -224,4 +222,4 @@ export default typescriptConfig;
 `,
 );
 
-console.log("Wrote rule config .js files");
+console.log('Wrote rule config .js files');

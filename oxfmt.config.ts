@@ -1,7 +1,9 @@
-import formatConfig from './core/format.js';
+import { defineConfig } from 'oxfmt';
 
-const config = {
-  ...formatConfig,
-};
+const config = defineConfig({
+  arrowParens: 'avoid',
+  printWidth: 120,
+  singleQuote: true,
+});
 
 export default config;

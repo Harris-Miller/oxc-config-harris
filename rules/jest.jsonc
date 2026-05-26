@@ -2,6 +2,9 @@
   "$schema": "../node_modules/oxlint/configuration_schema.json",
   "overrides": [
     {
+      "env": {
+        "jest": true,
+      },
       "files": ["**/*.test.*", "**/*spec.*"],
       "plugins": ["jest"],
       "rules": {

@@ -1,9 +1,9 @@
 {
   "$schema": "../node_modules/oxlint/configuration_schema.json",
   "extends": [
-    "./rules/jsx-a11y.jsonc",
-    // "./rules/react-perf.jsonc",
-    "./rules/react.jsonc",
+    "../rules/jsx-a11y.jsonc",
+    // "../rules/react-perf.jsonc",
+    "../rules/react.jsonc",
   ],
   "env": {
     "browser": true,

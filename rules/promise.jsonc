@@ -6,8 +6,8 @@
       "off",
       {
         "ignoreAssignmentVariable": ["globalThis"],
-        "ignoreLastCallback": false
-      }
+        "ignoreLastCallback": false,
+      },
     ],
     "avoid-new": "off",
     "catch-or-return": [
@@ -15,16 +15,16 @@
       {
         "allowFinally": false,
         "allowThen": false,
-        "terminationMethod": ["catch"]
-      }
+        "terminationMethod": ["catch"],
+      },
     ],
     "no-callback-in-promise": [
       "off",
       {
         "callbacks": ["callback", "cb", "done", "next"],
         "exceptions": [],
-        "timeoutsErr": false
-      }
+        "timeoutsErr": false,
+      },
     ],
     "no-multiple-resolved": "off",
     "no-nesting": "off",
@@ -32,26 +32,26 @@
     "no-promise-in-callback": [
       "off",
       {
-        "exemptDeclarations": false
-      }
+        "exemptDeclarations": false,
+      },
     ],
     "no-return-in-finally": "off",
     "no-return-wrap": [
       "off",
       {
-        "allowReject": false
-      }
+        "allowReject": false,
+      },
     ],
     "param-names": "off",
     "prefer-await-to-callbacks": "off",
     "prefer-await-to-then": [
       "off",
       {
-        "strict": false
-      }
+        "strict": false,
+      },
     ],
     "prefer-catch": "off",
     "spec-only": "off",
-    "valid-params": "off"
-  }
+    "valid-params": "off",
+  },
 }

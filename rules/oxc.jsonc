@@ -21,39 +21,39 @@
     "no-async-endpoint-handlers": [
       "off",
       {
-        "allowedNames": []
-      }
+        "allowedNames": [],
+      },
     ],
     "no-barrel-file": [
       "off",
       {
-        "threshold": 100
-      }
+        "threshold": 100,
+      },
     ],
     "no-const-enum": "off",
     "no-map-spread": [
       "off",
       {
         "ignoreArgs": true,
-        "ignoreRereads": true
-      }
+        "ignoreRereads": true,
+      },
     ],
     "no-optional-chaining": [
       "off",
       {
-        "message": ""
-      }
+        "message": "",
+      },
     ],
     "no-rest-spread-properties": [
       "off",
       {
         "objectRestMessage": "",
-        "objectSpreadMessage": ""
-      }
+        "objectSpreadMessage": "",
+      },
     ],
     "no-this-in-exported-function": "off",
     "number-arg-out-of-range": "error",
     "only-used-in-recursion": "error",
-    "uninvoked-array-callback": "error"
-  }
+    "uninvoked-array-callback": "error",
+  },
 }

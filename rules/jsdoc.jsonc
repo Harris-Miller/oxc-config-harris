@@ -9,21 +9,21 @@
       {
         "definedTags": [],
         "jsxTags": false,
-        "typed": false
-      }
+        "typed": false,
+      },
     ],
     "empty-tags": [
       "off",
       {
-        "tags": []
-      }
+        "tags": [],
+      },
     ],
     "implements-on-classes": "off",
     "no-defaults": [
       "off",
       {
-        "noOptionalParamNames": false
-      }
+        "noOptionalParamNames": false,
+      },
     ],
     "require-param": [
       "off",
@@ -35,8 +35,8 @@
         "checkRestProperty": false,
         "checkSetters": true,
         "checkTypesPattern": "^(?:[oO]bject|[aA]rray|PlainObject|Generic(?:Object|Array))$",
-        "exemptedBy": ["inheritdoc"]
-      }
+        "exemptedBy": ["inheritdoc"],
+      },
     ],
     "require-param-description": "off",
     "require-param-name": "off",
@@ -52,8 +52,8 @@
         "checkGetters": true,
         "exemptedBy": ["inheritdoc"],
         "forceRequireReturn": false,
-        "forceReturnsWithAsync": false
-      }
+        "forceReturnsWithAsync": false,
+      },
     ],
     "require-returns-description": "off",
     "require-returns-type": "off",
@@ -64,9 +64,9 @@
       {
         "exemptedBy": ["inheritdoc"],
         "forceRequireYields": false,
-        "withGeneratorTag": false
-      }
+        "withGeneratorTag": false,
+      },
     ],
-    "require-yields-type": "off"
-  }
+    "require-yields-type": "off",
+  },
 }

@@ -1,5 +1,5 @@
 {
-  "name": "oxc-config-harris",
+  "name": "oxlint-config-harris",
   "version": "0.1.0",
   "private": true,
   "description": "Harris' Personal Shared Oxlint and Oxfmt configs monorepo",

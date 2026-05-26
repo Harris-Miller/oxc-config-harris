@@ -32,33 +32,30 @@
   ],
   "type": "module",
   "exports": {
-    ".": "./index.js",
-    "./base": "./base.js",
+    ".": "./index.ts",
+    "./base": "./base.ts",
     "./package.json": "./package.json",
-    "./core": "./core/core.js",
-    "./format": "./core/format.js",
-    "./typescript": "./typescript/typescript.js",
-    "./react": "./react/react.js",
-    "./jest": "./jest/jest.js",
-    "./globals": "./globals.js",
-    "./unmigrated": "./UNMIGRATED.md"
+    "./react": "./react/react.ts",
+    "./jest": "./jest/jest.ts"
   },
   "scripts": {
-    "lint": "oxlint",
+    "lint": "oxlint --max-warnings=0",
     "fmt": "oxfmt",
-    "fmt:check": "oxfmt --check"
+    "fmt:check": "oxfmt --check",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.11",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-typescript-sort-keys": "^3.3.0",
-    "globals": "^17.4.0"
+    "eslint-plugin-typescript-sort-keys": "^3.3.0"
   },
   "devDependencies": {
+    "@types/node": "^24.12.4",
     "oxfmt": "^0.36.0",
     "oxlint": "^1.66.0",
-    "oxlint-tsgolint": "^0.23.0"
+    "oxlint-tsgolint": "^0.23.0",
+    "typescript": "^6.0.3"
   },
   "peerDependencies": {
     "oxfmt": ">=0.36.0",

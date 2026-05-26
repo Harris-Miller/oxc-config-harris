@@ -1,0 +1,261 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react"],
+  "rules": {
+    "button-has-type": [
+      "off",
+      {
+        "button": true,
+        "reset": true,
+        "submit": true
+      }
+    ],
+    "checked-requires-onchange-or-readonly": [
+      "off",
+      {
+        "ignoreExclusiveCheckedAttribute": false,
+        "ignoreMissingProperties": false
+      }
+    ],
+    "display-name": [
+      "off",
+      {
+        "checkContextObjects": false,
+        "ignoreTranspilerName": false
+      }
+    ],
+    "exhaustive-deps": "off",
+    "forbid-component-props": [
+      "off",
+      {
+        "forbid": [
+          "className",
+          "style"
+        ]
+      }
+    ],
+    "forbid-dom-props": [
+      "off",
+      {
+        "forbid": []
+      }
+    ],
+    "forbid-elements": [
+      "off",
+      {
+        "forbid": []
+      }
+    ],
+    "forward-ref-uses-ref": "off",
+    "hook-use-state": [
+      "off",
+      {
+        "allowDestructuredState": false
+      }
+    ],
+    "iframe-missing-sandbox": "off",
+    "jsx-boolean-value": [
+      "off",
+      "never",
+      {
+        "always": [],
+        "assumeUndefinedIsFalse": false,
+        "never": []
+      }
+    ],
+    "jsx-curly-brace-presence": [
+      "off",
+      {
+        "children": "never",
+        "propElementValues": "ignore",
+        "props": "never"
+      }
+    ],
+    "jsx-filename-extension": [
+      "off",
+      {
+        "allow": "always",
+        "extensions": [
+          "jsx"
+        ],
+        "ignoreFilesWithoutCode": false
+      }
+    ],
+    "jsx-fragments": [
+      "off",
+      "syntax"
+    ],
+    "jsx-handler-names": [
+      "off",
+      {
+        "checkInlineFunctions": false,
+        "checkLocalVariables": false,
+        "eventHandlerPrefixes": "handle",
+        "eventHandlerPropPrefixes": "on",
+        "ignoreComponentNames": []
+      }
+    ],
+    "jsx-key": [
+      "off",
+      {
+        "checkFragmentShorthand": true,
+        "checkKeyMustBeforeSpread": true,
+        "warnOnDuplicates": true
+      }
+    ],
+    "jsx-max-depth": [
+      "off",
+      {
+        "max": 2
+      }
+    ],
+    "jsx-no-comment-textnodes": "off",
+    "jsx-no-constructed-context-values": "off",
+    "jsx-no-duplicate-props": "off",
+    "jsx-no-script-url": [
+      "off",
+      {
+        "components": {},
+        "includeFromSettings": false
+      }
+    ],
+    "jsx-no-target-blank": [
+      "off",
+      {
+        "allowReferrer": false,
+        "enforceDynamicLinks": "always",
+        "forms": false,
+        "links": true,
+        "warnOnSpreadAttributes": false
+      }
+    ],
+    "jsx-no-undef": "off",
+    "jsx-no-useless-fragment": [
+      "off",
+      {
+        "allowExpressions": false
+      }
+    ],
+    "jsx-pascal-case": [
+      "off",
+      {
+        "allowAllCaps": false,
+        "allowLeadingUnderscore": false,
+        "allowNamespace": false,
+        "ignore": []
+      }
+    ],
+    "jsx-props-no-spread-multi": "off",
+    "jsx-props-no-spreading": [
+      "off",
+      {
+        "custom": "enforce",
+        "exceptions": [],
+        "explicitSpread": "enforce",
+        "html": "enforce"
+      }
+    ],
+    "no-array-index-key": "off",
+    "no-children-prop": "off",
+    "no-clone-element": "off",
+    "no-danger": "off",
+    "no-danger-with-children": "off",
+    "no-did-mount-set-state": [
+      "off",
+      "allowed"
+    ],
+    "no-did-update-set-state": [
+      "off",
+      "allowed"
+    ],
+    "no-direct-mutation-state": "off",
+    "no-find-dom-node": "off",
+    "no-is-mounted": "off",
+    "no-multi-comp": [
+      "off",
+      {
+        "ignoreStateless": false
+      }
+    ],
+    "no-namespace": "off",
+    "no-object-type-as-default-prop": "off",
+    "no-react-children": "off",
+    "no-redundant-should-component-update": "off",
+    "no-render-return-value": "off",
+    "no-set-state": "off",
+    "no-string-refs": [
+      "off",
+      {
+        "noTemplateLiterals": false
+      }
+    ],
+    "no-this-in-sfc": "off",
+    "no-unescaped-entities": "off",
+    "no-unknown-property": [
+      "off",
+      {
+        "ignore": [],
+        "requireDataLowercase": false
+      }
+    ],
+    "no-unsafe": [
+      "off",
+      {
+        "checkAliases": false
+      }
+    ],
+    "no-unstable-nested-components": [
+      "off",
+      {
+        "allowAsProps": false,
+        "customValidators": [],
+        "propNamePattern": "render*"
+      }
+    ],
+    "no-will-update-set-state": [
+      "off",
+      "allowed"
+    ],
+    "only-export-components": [
+      "off",
+      {
+        "allowConstantExport": false,
+        "allowExportNames": [],
+        "checkJS": false,
+        "customHOCs": []
+      }
+    ],
+    "prefer-es6-class": [
+      "off",
+      "always"
+    ],
+    "prefer-function-component": [
+      "off",
+      {
+        "allowErrorBoundary": true,
+        "allowJsxUtilityClass": false
+      }
+    ],
+    "react-in-jsx-scope": "off",
+    "require-render-return": "off",
+    "rules-of-hooks": "off",
+    "self-closing-comp": [
+      "off",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "state-in-constructor": [
+      "off",
+      "always"
+    ],
+    "style-prop-object": [
+      "off",
+      {
+        "allow": []
+      }
+    ],
+    "void-dom-elements-no-children": "off"
+  }
+}

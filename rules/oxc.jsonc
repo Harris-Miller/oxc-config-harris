@@ -1,0 +1,59 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["oxc"],
+  "rules": {
+    "approx-constant": "off",
+    "bad-array-method-on-arguments": "error",
+    "bad-bitwise-operator": "off",
+    "bad-char-at-comparison": "error",
+    "bad-comparison-sequence": "error",
+    "bad-min-max-func": "error",
+    "bad-object-literal-comparison": "error",
+    "bad-replace-all-arg": "error",
+    "branches-sharing-code": "off",
+    "const-comparisons": "error",
+    "double-comparisons": "error",
+    "erasing-op": "error",
+    "misrefactored-assign-op": "off",
+    "missing-throw": "error",
+    "no-accumulating-spread": "off",
+    "no-async-await": "off",
+    "no-async-endpoint-handlers": [
+      "off",
+      {
+        "allowedNames": []
+      }
+    ],
+    "no-barrel-file": [
+      "off",
+      {
+        "threshold": 100
+      }
+    ],
+    "no-const-enum": "off",
+    "no-map-spread": [
+      "off",
+      {
+        "ignoreArgs": true,
+        "ignoreRereads": true
+      }
+    ],
+    "no-optional-chaining": [
+      "off",
+      {
+        "message": ""
+      }
+    ],
+    "no-rest-spread-properties": [
+      "off",
+      {
+        "objectRestMessage": "",
+        "objectSpreadMessage": ""
+      }
+    ],
+    "no-this-in-exported-function": "off",
+    "number-arg-out-of-range": "error",
+    "only-used-in-recursion": "error",
+    "uninvoked-array-callback": "error"
+  }
+}

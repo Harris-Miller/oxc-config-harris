@@ -1,0 +1,248 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["jsx-a11y"],
+  "rules": {
+    "alt-text": [
+      "off",
+      {
+        "area": [],
+        "img": [],
+        "input\\[type=\"image\"]": [],
+        "object": []
+      }
+    ],
+    "anchor-ambiguous-text": [
+      "off",
+      {
+        "words": [
+          "click here",
+          "here",
+          "link",
+          "a link",
+          "learn more"
+        ]
+      }
+    ],
+    "anchor-has-content": "off",
+    "anchor-is-valid": [
+      "off",
+      {
+        "validHrefs": []
+      }
+    ],
+    "aria-activedescendant-has-tabindex": "off",
+    "aria-props": "off",
+    "aria-proptypes": "off",
+    "aria-role": [
+      "off",
+      {
+        "allowedInvalidRoles": [],
+        "ignoreNonDOM": false
+      }
+    ],
+    "aria-unsupported-elements": "off",
+    "autocomplete-valid": [
+      "off",
+      {
+        "inputComponents": [
+          "input"
+        ]
+      }
+    ],
+    "click-events-have-key-events": "off",
+    "control-has-associated-label": [
+      "off",
+      {
+        "controlComponents": [],
+        "depth": 2,
+        "ignoreElements": [],
+        "ignoreRoles": [],
+        "labelAttributes": []
+      }
+    ],
+    "heading-has-content": "off",
+    "html-has-lang": "off",
+    "iframe-has-title": "off",
+    "img-redundant-alt": [
+      "off",
+      {
+        "components": [
+          "img"
+        ],
+        "words": [
+          "image",
+          "photo",
+          "picture"
+        ]
+      }
+    ],
+    "interactive-supports-focus": [
+      "off",
+      {
+        "tabbable": [
+          "button",
+          "checkbox",
+          "link",
+          "searchbox",
+          "spinbutton",
+          "switch",
+          "textbox"
+        ]
+      }
+    ],
+    "label-has-associated-control": [
+      "off",
+      {
+        "assert": "either",
+        "controlComponents": [],
+        "depth": 2,
+        "labelAttributes": [
+          "alt",
+          "aria-label",
+          "aria-labelledby"
+        ],
+        "labelComponents": [
+          "label"
+        ]
+      }
+    ],
+    "lang": "off",
+    "media-has-caption": [
+      "off",
+      {
+        "audio": [
+          "audio"
+        ],
+        "track": [
+          "track"
+        ],
+        "video": [
+          "video"
+        ]
+      }
+    ],
+    "mouse-events-have-key-events": [
+      "off",
+      {
+        "hoverInHandlers": [
+          "onMouseOver"
+        ],
+        "hoverOutHandlers": [
+          "onMouseOut"
+        ]
+      }
+    ],
+    "no-access-key": "off",
+    "no-aria-hidden-on-focusable": "off",
+    "no-autofocus": [
+      "off",
+      {
+        "ignoreNonDOM": false
+      }
+    ],
+    "no-distracting-elements": [
+      "off",
+      {
+        "elements": [
+          "marquee",
+          "blink"
+        ]
+      }
+    ],
+    "no-interactive-element-to-noninteractive-role": [
+      "off"
+    ],
+    "no-noninteractive-element-interactions": [
+      "off",
+      {
+        "handlers": [
+          "onClick",
+          "onError",
+          "onLoad",
+          "onMouseDown",
+          "onMouseUp",
+          "onKeyPress",
+          "onKeyDown",
+          "onKeyUp"
+        ],
+        "alert": [
+          "onKeyUp",
+          "onKeyDown",
+          "onKeyPress"
+        ],
+        "body": [
+          "onError",
+          "onLoad"
+        ],
+        "dialog": [
+          "onKeyUp",
+          "onKeyDown",
+          "onKeyPress"
+        ],
+        "iframe": [
+          "onError",
+          "onLoad"
+        ],
+        "img": [
+          "onError",
+          "onLoad"
+        ]
+      }
+    ],
+    "no-noninteractive-element-to-interactive-role": [
+      "off",
+      {
+        "ul": [
+          "menu",
+          "menubar",
+          "radiogroup",
+          "tablist",
+          "tree",
+          "treegrid"
+        ],
+        "ol": [
+          "menu",
+          "menubar",
+          "radiogroup",
+          "tablist",
+          "tree",
+          "treegrid"
+        ],
+        "li": [
+          "menuitem",
+          "menuitemcheckbox",
+          "menuitemradio",
+          "row",
+          "tab",
+          "treeitem"
+        ],
+        "fieldset": [
+          "radiogroup",
+          "presentation"
+        ]
+      }
+    ],
+    "no-noninteractive-tabindex": [
+      "off",
+      {
+        "allowExpressionValues": true,
+        "roles": [
+          "tabpanel"
+        ],
+        "tags": []
+      }
+    ],
+    "no-redundant-roles": "off",
+    "no-static-element-interactions": [
+      "off",
+      {
+        "allowExpressionValues": false
+      }
+    ],
+    "prefer-tag-over-role": "off",
+    "role-has-required-aria-props": "off",
+    "role-supports-aria-props": "off",
+    "scope": "off",
+    "tabindex-no-positive": "off"
+  }
+}

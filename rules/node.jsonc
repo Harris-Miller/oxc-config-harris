@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["node"],
+  "rules": {
+    "global-require": "off",
+    "handle-callback-err": [
+      "off",
+      "err"
+    ],
+    "no-exports-assign": "off",
+    "no-new-require": "off",
+    "no-path-concat": "off",
+    "no-process-env": [
+      "off",
+      {
+        "allowedVariables": []
+      }
+    ]
+  }
+}

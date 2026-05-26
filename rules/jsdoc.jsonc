@@ -1,0 +1,78 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["jsdoc"],
+  "rules": {
+    "check-access": "off",
+    "check-property-names": "off",
+    "check-tag-names": [
+      "off",
+      {
+        "definedTags": [],
+        "jsxTags": false,
+        "typed": false
+      }
+    ],
+    "empty-tags": [
+      "off",
+      {
+        "tags": []
+      }
+    ],
+    "implements-on-classes": "off",
+    "no-defaults": [
+      "off",
+      {
+        "noOptionalParamNames": false
+      }
+    ],
+    "require-param": [
+      "off",
+      {
+        "checkConstructors": false,
+        "checkDestructured": true,
+        "checkDestructuredRoots": true,
+        "checkGetters": true,
+        "checkRestProperty": false,
+        "checkSetters": true,
+        "checkTypesPattern": "^(?:[oO]bject|[aA]rray|PlainObject|Generic(?:Object|Array))$",
+        "exemptedBy": [
+          "inheritdoc"
+        ]
+      }
+    ],
+    "require-param-description": "off",
+    "require-param-name": "off",
+    "require-param-type": "off",
+    "require-property": "off",
+    "require-property-description": "off",
+    "require-property-name": "off",
+    "require-property-type": "off",
+    "require-returns": [
+      "off",
+      {
+        "checkConstructors": false,
+        "checkGetters": true,
+        "exemptedBy": [
+          "inheritdoc"
+        ],
+        "forceRequireReturn": false,
+        "forceReturnsWithAsync": false
+      }
+    ],
+    "require-returns-description": "off",
+    "require-returns-type": "off",
+    "require-throws-description": "off",
+    "require-throws-type": "off",
+    "require-yields": [
+      "off",
+      {
+        "exemptedBy": [
+          "inheritdoc"
+        ],
+        "forceRequireYields": false,
+        "withGeneratorTag": false
+      }
+    ],
+    "require-yields-type": "off"
+  }
+}

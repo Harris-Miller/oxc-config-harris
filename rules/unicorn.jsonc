@@ -1,0 +1,254 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["unicorn"],
+  "rules": {
+    "catch-error-name": [
+      "off",
+      {
+        "name": "error"
+      }
+    ],
+    "consistent-assert": "off",
+    "consistent-date-clone": "off",
+    "consistent-empty-array-spread": "off",
+    "consistent-existence-index-check": "off",
+    "consistent-function-scoping": [
+      "off",
+      {
+        "checkArrowFunctions": true
+      }
+    ],
+    "consistent-template-literal-escape": "off",
+    "custom-error-definition": "off",
+    "empty-brace-spaces": "off",
+    "error-message": "off",
+    "escape-case": "off",
+    "explicit-length-check": [
+      "off",
+      {
+        "non-zero": "greater-than"
+      }
+    ],
+    "filename-case": [
+      "off",
+      {
+        "case": "kebabCase",
+        "cases": {
+          "kebabCase": true,
+          "camelCase": false,
+          "snakeCase": false,
+          "pascalCase": false
+        },
+        "multipleFileExtensions": true
+      }
+    ],
+    "new-for-builtins": "off",
+    "no-abusive-eslint-disable": "off",
+    "no-accessor-recursion": "off",
+    "no-anonymous-default-export": "off",
+    "no-array-callback-reference": "off",
+    "no-array-for-each": "off",
+    "no-array-method-this-argument": "off",
+    "no-array-reduce": [
+      "off",
+      {
+        "allowSimpleOperations": true
+      }
+    ],
+    "no-array-reverse": [
+      "off",
+      {
+        "allowExpressionStatement": true
+      }
+    ],
+    "no-array-sort": [
+      "off",
+      {
+        "allowExpressionStatement": true
+      }
+    ],
+    "no-await-expression-member": "off",
+    "no-await-in-promise-methods": "error",
+    "no-console-spaces": "off",
+    "no-document-cookie": "off",
+    "no-empty-file": "error",
+    "no-hex-escape": "off",
+    "no-immediate-mutation": "off",
+    "no-instanceof-array": "off",
+    "no-instanceof-builtins": [
+      "off",
+      {
+        "exclude": [],
+        "include": [],
+        "strategy": "loose",
+        "useErrorIsError": false
+      }
+    ],
+    "no-invalid-fetch-options": "error",
+    "no-invalid-remove-event-listener": "error",
+    "no-length-as-slice-end": "off",
+    "no-lonely-if": "off",
+    "no-magic-array-flat-depth": "off",
+    "no-negated-condition": "off",
+    "no-negation-in-equality-check": "off",
+    "no-nested-ternary": "off",
+    "no-new-array": "error",
+    "no-new-buffer": "off",
+    "no-null": [
+      "off",
+      {
+        "checkStrictEquality": false
+      }
+    ],
+    "no-object-as-default-parameter": "off",
+    "no-process-exit": "off",
+    "no-single-promise-in-promise-methods": "error",
+    "no-static-only-class": "off",
+    "no-thenable": "error",
+    "no-this-assignment": "off",
+    "no-typeof-undefined": [
+      "off",
+      {
+        "checkGlobalVariables": false
+      }
+    ],
+    "no-unnecessary-array-flat-depth": "off",
+    "no-unnecessary-array-splice-count": "off",
+    "no-unnecessary-await": "error",
+    "no-unnecessary-slice-end": "off",
+    "no-unreadable-array-destructuring": "off",
+    "no-unreadable-iife": "off",
+    "no-useless-collection-argument": "off",
+    "no-useless-error-capture-stack-trace": "off",
+    "no-useless-fallback-in-spread": "error",
+    "no-useless-iterator-to-array": "off",
+    "no-useless-length-check": "error",
+    "no-useless-promise-resolve-reject": [
+      "off",
+      {
+        "allowReject": false
+      }
+    ],
+    "no-useless-spread": "error",
+    "no-useless-switch-case": "off",
+    "no-useless-undefined": [
+      "off",
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true
+      }
+    ],
+    "no-zero-fractions": "off",
+    "number-literal-case": "off",
+    "numeric-separators-style": [
+      "off",
+      {
+        "onlyIfContainsSeparator": false
+      }
+    ],
+    "prefer-add-event-listener": "off",
+    "prefer-array-find": "off",
+    "prefer-array-flat": "off",
+    "prefer-array-flat-map": "off",
+    "prefer-array-index-of": "off",
+    "prefer-array-some": "off",
+    "prefer-at": [
+      "off",
+      {
+        "checkAllIndexAccess": false,
+        "getLastElementFunctions": []
+      }
+    ],
+    "prefer-bigint-literals": "off",
+    "prefer-blob-reading-methods": "off",
+    "prefer-class-fields": "off",
+    "prefer-classlist-toggle": "off",
+    "prefer-code-point": "off",
+    "prefer-date-now": "off",
+    "prefer-default-parameters": "off",
+    "prefer-dom-node-append": "off",
+    "prefer-dom-node-dataset": "off",
+    "prefer-dom-node-remove": "off",
+    "prefer-dom-node-text-content": "off",
+    "prefer-event-target": "off",
+    "prefer-global-this": "off",
+    "prefer-import-meta-properties": "off",
+    "prefer-includes": "off",
+    "prefer-keyboard-event-key": "off",
+    "prefer-logical-operator-over-ternary": "off",
+    "prefer-math-min-max": "off",
+    "prefer-math-trunc": "off",
+    "prefer-modern-dom-apis": "off",
+    "prefer-modern-math-apis": "off",
+    "prefer-module": "off",
+    "prefer-native-coercion-functions": "off",
+    "prefer-negative-index": "off",
+    "prefer-node-protocol": "off",
+    "prefer-number-properties": [
+      "off",
+      {
+        "checkInfinity": false,
+        "checkNaN": true
+      }
+    ],
+    "prefer-object-from-entries": [
+      "off",
+      {
+        "functions": [
+          "_.fromPairs",
+          "lodash.fromPairs"
+        ]
+      }
+    ],
+    "prefer-optional-catch-binding": "off",
+    "prefer-prototype-methods": "off",
+    "prefer-query-selector": "off",
+    "prefer-reflect-apply": "off",
+    "prefer-regexp-test": "off",
+    "prefer-response-static-json": "off",
+    "prefer-set-has": "off",
+    "prefer-set-size": "error",
+    "prefer-spread": "off",
+    "prefer-string-raw": "off",
+    "prefer-string-replace-all": "off",
+    "prefer-string-slice": "off",
+    "prefer-string-starts-ends-with": "error",
+    "prefer-string-trim-start-end": "off",
+    "prefer-structured-clone": [
+      "off",
+      {
+        "functions": [
+          "cloneDeep",
+          "utils.clone"
+        ]
+      }
+    ],
+    "prefer-ternary": [
+      "off",
+      "always"
+    ],
+    "prefer-top-level-await": "off",
+    "prefer-type-error": "off",
+    "relative-url-style": [
+      "off",
+      "never"
+    ],
+    "require-array-join-separator": "off",
+    "require-module-attributes": "off",
+    "require-module-specifiers": "off",
+    "require-number-to-fixed-digits-argument": "off",
+    "require-post-message-target-origin": "off",
+    "switch-case-braces": [
+      "off",
+      "always"
+    ],
+    "switch-case-break-position": "off",
+    "text-encoding-identifier-case": [
+      "off",
+      {
+        "withDash": false
+      }
+    ],
+    "throw-new-error": "off"
+  }
+}

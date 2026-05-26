@@ -1,10 +1,15 @@
 {
   "$schema": "../node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react-perf"],
-  "rules": {
-    "jsx-no-jsx-as-prop": "off",
-    "jsx-no-new-array-as-prop": "off",
-    "jsx-no-new-function-as-prop": "off",
-    "jsx-no-new-object-as-prop": "off",
-  },
+  "overrides": [
+    {
+      "files": ["**/*.jsx", "**/*.tsx"],
+      "plugins": ["react-perf"],
+      "rules": {
+        "jsx-no-jsx-as-prop": "off",
+        "jsx-no-new-array-as-prop": "off",
+        "jsx-no-new-function-as-prop": "off",
+        "jsx-no-new-object-as-prop": "off",
+      },
+    },
+  ],
 }

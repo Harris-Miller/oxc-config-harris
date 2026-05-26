@@ -45,10 +45,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "confusing-browser-globals": "^1.0.11",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-typescript-sort-keys": "^3.3.0"
+    "confusing-browser-globals": "^1.0.11"
   },
   "devDependencies": {
     "@types/node": "^24.12.4",

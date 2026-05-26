@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-const jestConfig = defineConfig({
+export const jestRules = defineConfig({
   overrides: [
     {
       files: ['**/*.test.*', '**/*spec.*'],
@@ -57,5 +57,3 @@ const jestConfig = defineConfig({
     },
   ],
 });
-
-export default jestConfig;

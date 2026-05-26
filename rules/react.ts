@@ -1,10 +1,10 @@
 import { defineConfig } from 'oxlint';
 
-const reactConfig = defineConfig({
+const reactRules = defineConfig({
   overrides: [
     {
       files: ['**/*.jsx', '**/*.tsx'],
-      plugins: ['react', 'jsx-a11y'],
+      plugins: ['react', 'jsx-a11y', 'react-perf'],
       settings: {
         react: {
           version: 'detect',
@@ -70,4 +70,4 @@ const reactConfig = defineConfig({
   ],
 });
 
-export default reactConfig;
+export default reactRules;

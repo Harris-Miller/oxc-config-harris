@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-const importConfig = defineConfig({
+export const importRules = defineConfig({
   plugins: ['import'],
   rules: {
     'import/no-empty-named-blocks': 'error',
@@ -19,5 +19,3 @@ const importConfig = defineConfig({
     'import/no-named-default': 'error',
   },
 });
-
-export default importConfig;

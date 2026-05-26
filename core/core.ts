@@ -1,16 +1,17 @@
 import { defineConfig } from 'oxlint';
 
-import importConfig from './import.js';
-import personalConfig from './personal.js';
-import recommendedConfig from './recommended.js';
-import sortKeysConfig from './sortKeys.js';
+import { importRules } from '../rules/import.js';
+import { eslintRules } from '../rules/eslint.js';
+import { oxcRules } from '../rules/oxc.js';
+import { unicornRules } from '../rules/unicorn.js';
 
-const coreConfig = defineConfig({
-  extends: [recommendedConfig, personalConfig, importConfig, sortKeysConfig],
-  plugins: ['unicorn', 'typescript', 'oxc', 'import'],
+export const coreConfig = defineConfig({
+  extends: [eslintRules, importRules, unicornRules, oxcRules],
+  plugins: [],
   categories: {
     correctness: 'off',
   },
+  env: {
+    es2026: true,
+  },
 });
-
-export default coreConfig;

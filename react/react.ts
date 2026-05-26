@@ -51,7 +51,6 @@ const reactConfig = defineConfig({
         'no-regex-spaces': 'error',
         'no-self-assign': 'error',
         'no-setter-return': 'error',
-        'no-shadow-restricted-names': 'error',
         'no-sparse-arrays': 'error',
         'no-this-before-super': 'error',
         'no-unreachable': 'error',

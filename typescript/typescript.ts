@@ -10,7 +10,6 @@ const typescriptConfig = defineConfig({
       files: ['**/*.ts', '**/*.mts', '**/*.tsx'],
       plugins: ['typescript'],
       rules: {
-        'no-implied-eval': 'off',
         'no-unused-vars': [
           'error',
           {
@@ -60,7 +59,6 @@ const typescriptConfig = defineConfig({
         'typescript/no-extra-non-null-assertion': 'error',
         'typescript/no-floating-promises': 'off',
         'typescript/no-for-in-array': 'error',
-        'typescript/no-implied-eval': 'error',
         'typescript/no-misused-new': 'error',
         'typescript/no-misused-promises': [
           'error',
@@ -177,21 +175,7 @@ const typescriptConfig = defineConfig({
             requireDefaultForNonUnion: true,
           },
         ],
-        'consistent-return': 'off',
         'typescript/consistent-return': 'error',
-        'default-param-last': 'off',
-        'typescript/default-param-last': 'error',
-        'no-loop-func': 'off',
-        'typescript/no-loop-func': 'error',
-        'no-invalid-this': 'off',
-        'typescript/no-invalid-this': 'error',
-        'no-shadow': 'off',
-        'typescript/no-shadow': 'error',
-        'no-unused-expressions': 'off',
-        'typescript/no-unused-expressions': 'error',
-        'no-use-before-define': 'off',
-        'typescript/no-use-before-define': 'error',
-        'dot-notation': 'off',
         'typescript/dot-notation': 'error',
       },
     },

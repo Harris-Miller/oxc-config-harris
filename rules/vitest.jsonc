@@ -5,7 +5,7 @@
       "env": {
         "vitest": true,
       },
-      "files": ["**/*.test.*", "**/*spec.*"],
+      "files": ["**/*.test.*", "**/*spec.*", "**/__tests__/**"],
       "plugins": ["vitest"],
       "rules": {
         "consistent-each-for": "off",

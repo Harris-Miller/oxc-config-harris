@@ -5,7 +5,7 @@
       "env": {
         "jest": true,
       },
-      "files": ["**/*.test.*", "**/*spec.*"],
+      "files": ["**/*.test.*", "**/*spec.*", "**/__tests__/**"],
       "plugins": ["jest"],
       "rules": {
         "consistent-test-it": "error",

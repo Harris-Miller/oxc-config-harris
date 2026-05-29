@@ -43,7 +43,7 @@
         "no-find-dom-node": "error",
         "no-is-mounted": "error",
         "no-multi-comp": "off",
-        "no-namespace": "error",
+        "react/no-namespace": "error",
         "no-object-type-as-default-prop": "off",
         "no-react-children": "off",
         "no-redundant-should-component-update": "error",
@@ -56,7 +56,8 @@
         "no-unsafe": ["error", { "checkAliases": true }],
         "no-unstable-nested-components": "error",
         "no-will-update-set-state": "error",
-        "only-export-components": ["error", { "allowConstantExport": true }],
+        // this one is just too prone to false positives
+        "only-export-components": "off",
         "prefer-es6-class": ["error", "always"],
         "prefer-function-component": "off",
         "react-in-jsx-scope": "off",

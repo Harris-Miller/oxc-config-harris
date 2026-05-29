@@ -31,7 +31,7 @@
         "dot-notation": "error",
         "explicit-function-return-type": "off",
         "explicit-member-accessibility": "off",
-        "explicit-module-boundary-types": "error",
+        "explicit-module-boundary-types": "off",
         "no-array-delete": "error",
         "no-base-to-string": "error",
         "no-confusing-non-null-assertion": "error",
@@ -45,7 +45,7 @@
         "no-explicit-any": "error",
         "no-extra-non-null-assertion": "error",
         "no-extraneous-class": "error",
-        "no-floating-promises": "error",
+        "no-floating-promises": "off",
         "no-for-in-array": "error",
         "no-implied-eval": "error",
         "no-import-type-side-effects": "error",
@@ -56,13 +56,12 @@
         "no-misused-promises": [
           "error",
           {
-            // this was 'false' in eslint-config-harris, but true is default. would like to test this out.
-            "checksVoidReturn": true,
+            "checksVoidReturn": false,
           },
         ],
         "no-misused-spread": "error",
         "no-mixed-enums": "error",
-        "no-namespace": "error",
+        "typescript/no-namespace": "error",
         "no-non-null-asserted-nullish-coalescing": "error",
         "no-non-null-asserted-optional-chain": "error",
         "no-non-null-assertion": "off",

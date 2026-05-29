@@ -46,10 +46,5 @@
     "oxlint": ">=1.66.0",
     "oxlint-tsgolint": ">=0.23.0"
   },
-  "peerDependenciesMeta": {
-    "oxlint-tsgolint": {
-      "optional": true
-    }
-  },
   "packageManager": "pnpm@10.30.1"
 }

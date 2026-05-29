@@ -1,7 +1,4 @@
 {
   "$schema": "../node_modules/oxlint/configuration_schema.json",
   "extends": ["../rules/node.jsonc"],
-  "env": {
-    "node": true,
-  },
 }

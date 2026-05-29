@@ -5,7 +5,4 @@
     // "../rules/react-perf.jsonc",
     "../rules/react.jsonc",
   ],
-  "env": {
-    "browser": true,
-  },
 }

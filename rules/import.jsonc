@@ -27,7 +27,7 @@
     "no-named-as-default-member": "off",
     "no-named-default": "off",
     "no-named-export": "off",
-    "no-namespace": "off",
+    "import/no-namespace": "off",
     "no-nodejs-modules": "off",
     "no-relative-parent-imports": "off",
     "no-self-import": "off",
